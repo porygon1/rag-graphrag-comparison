@@ -1,0 +1,50 @@
+concurrent_requests: 5
+completion_models:
+  default_completion_model:
+    model_provider: azure
+    model: gpt-4.1-mini
+    azure_deployment_name: ${AZURE_OPENAI_CHAT_DEPLOYMENT}
+    api_key: ${AZURE_OPENAI_API_KEY}
+    api_base: ${AZURE_OPENAI_ENDPOINT}
+    api_version: ${AZURE_OPENAI_API_VERSION}
+    retry:
+      type: exponential_backoff
+embedding_models:
+  default_embedding_model:
+    model_provider: azure
+    model: text-embedding-3-small
+    azure_deployment_name: ${AZURE_OPENAI_EMBEDDING_DEPLOYMENT}
+    api_key: ${AZURE_OPENAI_API_KEY}
+    api_base: ${AZURE_OPENAI_ENDPOINT}
+    api_version: ${AZURE_OPENAI_API_VERSION}
+    retry:
+      type: exponential_backoff
+input:
+  type: jsonl
+  file_pattern: input_records.jsonl
+  id_column: input_record_id
+  text_column: text
+input_storage:
+  type: file
+  base_dir: input
+chunking:
+  size: 8191
+  overlap: 0
+  encoding_model: o200k_base
+extract_graph:
+  entity_types:
+  - organization
+  - person
+  - geo
+  - event
+extract_claims:
+  enabled: false
+vector_store:
+  vector_size: 1536
+local_search:
+  max_context_tokens: 12000
+  text_unit_prop: 0.5
+  community_prop: 0.15
+  conversation_history_max_turns: 5
+  top_k_entities: 10
+  top_k_relationships: 10

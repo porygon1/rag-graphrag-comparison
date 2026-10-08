@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="137mm" viewBox="0 0 160 137" role="img">
+<title>Evaluate the first five Sources in their preserved retrieval order</title>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.italic{font-style:italic}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.edge{fill:none;stroke:#333;stroke-width:.3}.node{fill:white;stroke:#444;stroke-width:.27}.paper{fill:white;stroke:#777;stroke-width:.25}.module{fill:#f4f4f4;stroke:#555;stroke-width:.27}.distance{fill:none;stroke:#666;stroke-width:.25;stroke-dasharray:1.2 1.1}</style>
+<text x="5" y="7" class="small bold" text-anchor="start">Pos.</text>
+<text x="24" y="7" class="small bold" text-anchor="start">Source ID</text>
+<text x="56" y="7" class="small bold" text-anchor="start">Page / unit</text>
+<text x="84" y="7" class="small bold" text-anchor="start">Content (shortened)</text>
+<text x="150" y="4" class="small bold" text-anchor="middle">Qrel</text>
+<text x="150" y="9" class="small bold" text-anchor="middle">grade</text>
+<rect x="2" y="13" width="156" height="70" fill="#f7f7f7" stroke="#555" stroke-width=".35"/>
+<text x="9" y="22" class="small" text-anchor="middle">1</text>
+<text x="30" y="22" class="small" text-anchor="middle">1</text>
+<text x="56" y="19" class="small" text-anchor="start">A / 1</text>
+<text x="56" y="24" class="small" text-anchor="start">t1</text>
+<text x="84" y="19" class="small" text-anchor="start">Guide books and</text>
+<text x="84" y="24" class="small" text-anchor="start">welcomes guests.</text>
+<text x="150" y="22" class="small bold" text-anchor="middle">2</text>
+<path d="M6 27H154" class="rule"/>
+<text x="9" y="36" class="small" text-anchor="middle">2</text>
+<text x="30" y="36" class="small" text-anchor="middle">21</text>
+<text x="56" y="33" class="small" text-anchor="start">D / 1</text>
+<text x="56" y="38" class="small" text-anchor="start">t4</text>
+<text x="84" y="33" class="small" text-anchor="start">Guides welcome guests</text>
+<text x="84" y="38" class="small" text-anchor="start">at the desk.</text>
+<text x="150" y="36" class="small bold" text-anchor="middle">2</text>
+<path d="M6 41H154" class="rule"/>
+<text x="9" y="50" class="small" text-anchor="middle">3</text>
+<text x="30" y="50" class="small" text-anchor="middle">8</text>
+<text x="56" y="47" class="small" text-anchor="start">B / 1</text>
+<text x="56" y="52" class="small" text-anchor="start">t2</text>
+<text x="84" y="47" class="small" text-anchor="start">Projector repairs go to</text>
+<text x="84" y="52" class="small" text-anchor="start">the repair desk.</text>
+<text x="150" y="50" class="small bold" text-anchor="middle">0</text>
+<path d="M6 55H154" class="rule"/>
+<text x="9" y="64" class="small" text-anchor="middle">4</text>
+<text x="30" y="64" class="small" text-anchor="middle">34</text>
+<text x="56" y="61" class="small" text-anchor="start">E / 3</text>
+<text x="56" y="66" class="small" text-anchor="start">t5</text>
+<text x="84" y="61" class="small" text-anchor="start">Spare bulbs are ordered</text>
+<text x="84" y="66" class="small" text-anchor="start">via the repair desk.</text>
+<text x="150" y="64" class="small bold" text-anchor="middle">0</text>
+<path d="M6 69H154" class="rule"/>
+<text x="9" y="78" class="small" text-anchor="middle">5</text>
+<text x="30" y="78" class="small" text-anchor="middle">14</text>
+<text x="56" y="75" class="small" text-anchor="start">C / 2</text>
+<text x="56" y="80" class="small" text-anchor="start">t3</text>
+<text x="84" y="75" class="small" text-anchor="start">Guest badges must</text>
+<text x="84" y="80" class="small" text-anchor="start">show the booked session.</text>
+<text x="150" y="78" class="small bold" text-anchor="middle">1</text>
+<text x="9" y="99" class="small" text-anchor="middle">6</text>
+<text x="30" y="99" class="small" text-anchor="middle">55</text>
+<text x="56" y="96" class="small" text-anchor="start">F / 1</text>
+<text x="56" y="101" class="small" text-anchor="start">t6</text>
+<text x="84" y="96" class="small" text-anchor="start">Guest parking is</text>
+<text x="84" y="101" class="small" text-anchor="start">beside the planetarium.</text>
+<text x="150" y="99" class="small bold" text-anchor="middle">1</text>
+<text x="154" y="89" class="small bold" text-anchor="end">Evaluation stops after position 5.</text>
+<path d="M2 108H158" class="rule"/>
+<text x="2" y="117" class="bold" text-anchor="start">nDCG@5 = 0.870</text>
+<text x="86" y="117" class="bold" text-anchor="start">Evidence Recall@5 = 1</text>
+<text x="2" y="126" class="small" text-anchor="start">DCG / ideal DCG:</text>
+<text x="2" y="133" class="small" text-anchor="start">3.649 / 4.193</text>
+<text x="86" y="126" class="small" text-anchor="start">t1 supplies both facts needed</text>
+<text x="86" y="133" class="small" text-anchor="start">to answer the question.</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="185mm" viewBox="0 0 160 185" role="img">
+<title>Embed the question, compare entity vectors using L2 distance, and look up the existing entity</title>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.italic{font-style:italic}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.edge{fill:none;stroke:#333;stroke-width:.3}.node{fill:white;stroke:#444;stroke-width:.27}.paper{fill:white;stroke:#777;stroke-width:.25}.module{fill:#f4f4f4;stroke:#555;stroke-width:.27}.distance{fill:none;stroke:#666;stroke-width:.25;stroke-dasharray:1.2 1.1}</style>
+<path d="M2 0H154L158 4V19H2Z M154 0V4H158" class="paper"/>
+<text x="7" y="6" class="bold" text-anchor="start">Question</text>
+<text x="7" y="13" class="" text-anchor="start">Who books and welcomes guests?</text>
+<path d="M38.5 19V26.8" class="process"/>
+<rect x="2" y="27" width="73" height="21" rx="3" class="module"/>
+<text x="38.5" y="35" class="bold" text-anchor="middle">Azure embedding model</text>
+<text x="38.5" y="42" class="" text-anchor="middle">text-embedding-3-small</text>
+<path d="M38.5 48V52.8" class="process"/>
+<rect x="2" y="53" width="73" height="15" rx="1" class="paper"/>
+<text x="38.5" y="59" class="" text-anchor="middle">q = [q1, q2, ..., q1536]</text>
+<text x="38.5" y="65" class="small" text-anchor="middle">1,536 dimensions</text>
+<rect x="85" y="27" width="73" height="39" rx="1" class="paper"/>
+<text x="90" y="34" class="bold" text-anchor="start">LanceDB entity vector store</text>
+<path d="M90 38H153" class="rule"/>
+<text x="90" y="44" class="small" text-anchor="start">These vectors were stored</text>
+<text x="90" y="49" class="small">during indexing.</text>
+<text x="90" y="55" class="" text-anchor="start">h = [h1, h2, ..., h1536]</text>
+<text x="90" y="61" class="small" text-anchor="start">Entity ID: e1 (GUIDE)</text>
+<path d="M38.5 68V72.8" class="process"/>
+<path d="M121.5 66V73" class="process"/>
+<rect x="2" y="73" width="156" height="68" rx="2" class="module"/>
+<text x="80" y="80" class="bold" text-anchor="middle">Entity matching (GraphRAG 3.1.0)</text>
+<path d="M7 84H153" class="rule"/>
+<text x="8" y="92" class="small bold" text-anchor="start">Schematic space</text>
+<path d="M28 112L44 107" class="distance"/>
+<path d="M28 112L12 127" class="distance"/>
+<path d="M28 112L66 122" class="distance"/>
+<path d="M28 109.8L30.2 112L28 114.2L25.8 112Z" fill="#222"/>
+<circle cx="44" cy="107" r="1.8" fill="white" stroke="#222" stroke-width=".4"/>
+<circle cx="12" cy="127" r="1.5" fill="white" stroke="#777" stroke-width=".3"/>
+<circle cx="66" cy="122" r="1.5" fill="white" stroke="#777" stroke-width=".3"/>
+<text x="20" y="110" class="bold" text-anchor="start">q</text>
+<text x="48" y="105" class="small" text-anchor="start">h (GUIDE)</text>
+<text x="88" y="95" class="bold" text-anchor="start">L2 (Euclidean) distance</text>
+<text x="88" y="102" class="small" text-anchor="start">LanceDB returns entities</text>
+<text x="88" y="108" class="small" text-anchor="start">in order of increasing</text>
+<text x="88" y="114" class="small">L2 distance.</text>
+<text x="88" y="124" class="small">Matching uses all</text>
+<text x="88" y="130" class="small" text-anchor="start">1,536 dimensions.</text>
+<text x="8" y="137" class="small">The diamond marks the query. Circles mark entity vectors.</text>
+<path d="M80 141V154" class="process"/>
+<text x="87" y="148" class="small" text-anchor="start">GraphRAG looks up e1.</text>
+<rect x="2" y="154" width="156" height="22" rx="1" class="paper"/>
+<text x="7" y="162" class="bold" text-anchor="start">GUIDE</text>
+<text x="153" y="162" class="" text-anchor="end">ID: e1</text>
+<path d="M7 165H153" class="rule"/>
+<text x="7" y="172" class="" text-anchor="start">The guide books and welcomes guests.</text>
+<text x="2" y="183" class="small" text-anchor="start">This panel shows GUIDE as one example match.</text>
+<g id="vector-notation" fill="none" stroke="#171717" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" aria-label="Arrows identify complete vectors; indexed components remain scalar">
+<path id="vec-query" d="M19.3951 55.6500H21.8951 M21.2451 55.1500L21.8951 55.6500L21.2451 56.1500"/>
+<path id="vec-stored-entity" d="M89.8292 51.3000H92.3292 M91.6792 50.8000L92.3292 51.3000L91.6792 51.8000"/>
+<path id="vec-space-query" d="M19.9354 106.6500H22.4354 M21.7854 106.1500L22.4354 106.6500L21.7854 107.1500"/>
+<path id="vec-space-entity" d="M47.7800 101.4500H50.2800 M49.6300 100.9500L50.2800 101.4500L49.6300 101.9500"/>
+</g>
+</svg>

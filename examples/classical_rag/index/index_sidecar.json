@@ -1,0 +1,29 @@
+{
+  "run_id": "rfc2795-azure-example",
+  "embedding_model": "text-embedding-3-small",
+  "dimension": 1536,
+  "item_ids": [
+    "DEMO-CHUNK-001",
+    "DEMO-CHUNK-002",
+    "DEMO-CHUNK-003",
+    "DEMO-CHUNK-004",
+    "DEMO-CHUNK-005",
+    "DEMO-CHUNK-006",
+    "DEMO-CHUNK-007",
+    "DEMO-CHUNK-008",
+    "DEMO-CHUNK-009",
+    "DEMO-CHUNK-010",
+    "DEMO-CHUNK-011",
+    "DEMO-CHUNK-012",
+    "DEMO-CHUNK-013",
+    "DEMO-CHUNK-014",
+    "DEMO-CHUNK-015",
+    "DEMO-CHUNK-016",
+    "DEMO-CHUNK-017",
+    "DEMO-CHUNK-018",
+    "DEMO-CHUNK-019",
+    "DEMO-CHUNK-020"
+  ],
+  "index_family": "numpy-exact-cosine",
+  "normalization_status": "normalized_unit_length"
+}

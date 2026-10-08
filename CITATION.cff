@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using this file."
+type: software
+title: rag-graphrag-comparison
+authors:
+  - family-names: porygon1
+version: 0.1.0
+license: MIT
+references:
+  - type: thesis
+    thesis-type: "Master's thesis"
+    title: >-
+      From Guidelines to Grounded Answers:
+      Answer Quality and Configuration Effects in Vector RAG and
+      Microsoft GraphRAG Local Search
+    authors:
+      - family-names: JH
+    year: 2026
+    institution:
+      name: University of Applied Sciences Technikum Wien

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="173mm" viewBox="0 0 160 173" role="img">
+<title>Generate an answer using the original question, selected context and native prompt, then interpret the citation</title>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.italic{font-style:italic}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.edge{fill:none;stroke:#333;stroke-width:.3}.node{fill:white;stroke:#444;stroke-width:.27}.paper{fill:white;stroke:#777;stroke-width:.25}.module{fill:#f4f4f4;stroke:#555;stroke-width:.27}.distance{fill:none;stroke:#666;stroke-width:.25;stroke-dasharray:1.2 1.1}</style>
+<rect x="2" y="0" width="156" height="43" rx="1" class="paper"/>
+<text x="7" y="7" class="bold" text-anchor="start">GraphRAG Local Search prompt</text>
+<text x="7" y="14" class="small" text-anchor="start">Default template, v3.1.0 (summary)</text>
+<path d="M7 18H153" class="rule"/>
+<text x="7" y="25" class="italic" text-anchor="start">Use the supplied context to answer the question.</text>
+<text x="7" y="31" class="italic" text-anchor="start">Cite supporting dataset names and record IDs.</text>
+<text x="7" y="37" class="italic" text-anchor="start">If the answer is unknown, say so.</text>
+<path d="M80 43V64" class="process"/>
+<path d="M2 60H41L45 64V99H2Z M41 60V64H45" class="paper"/>
+<text x="7" y="67" class="bold" text-anchor="start">Question</text>
+<text x="7" y="75" class="small" text-anchor="start">Who books</text>
+<text x="7" y="82" class="small" text-anchor="start">and welcomes</text>
+<text x="7" y="89" class="small" text-anchor="start">guests?</text>
+<rect x="116" y="60" width="42" height="39" rx="1" class="paper"/>
+<text x="121" y="67" class="bold" text-anchor="start">Context</text>
+<text x="121" y="75" class="small" text-anchor="start">Entities</text>
+<text x="121" y="81" class="small" text-anchor="start">Relationships</text>
+<text x="121" y="87" class="small" text-anchor="start">Reports</text>
+<text x="121" y="93" class="small" text-anchor="start">Sources</text>
+<rect x="53" y="64" width="54" height="31" rx="3" class="module"/>
+<text x="80" y="76" class="bold" text-anchor="middle">Azure answer generation</text>
+<text x="80" y="85" class="" text-anchor="middle">gpt-4.1-mini</text>
+<path d="M45 79.5H53" class="process"/>
+<path d="M116 79.5H107" class="process"/>
+<path d="M80 95V115" class="process"/>
+<rect x="2" y="115" width="156" height="54" rx="1" class="paper"/>
+<text x="7" y="122" class="bold" text-anchor="start">Answer</text>
+<text x="7" y="131" class="" text-anchor="start">The guide books and welcomes guests.</text>
+<text x="7" y="140" class="" text-anchor="start">[Data: Sources (1)]</text>
+<path d="M7 146H153" class="rule"/>
+<text x="7" y="154" class="small" text-anchor="start">Sources names the context table.</text>
+<text x="93" y="154" class="small" text-anchor="start">1 identifies the record.</text>
+<text x="7" y="163" class="small" text-anchor="start">The record ID is not a document page number.</text>
+</svg>

@@ -1,0 +1,3 @@
+{"case_id": "appendix_A3", "thesis_ref": "A.3/Table21", "ranked_units": ["A", "B", "C", "D", "E"], "qrels": {"A": 2, "B": 0, "C": 1, "D": 2, "E": 0, "F": 1}, "minimal_evidence_sets": []}
+{"case_id": "appendix_G_graph", "thesis_ref": "G/Figure17", "ranked_units": ["A", "D", "B", "E", "C"], "qrels": {"A": 2, "B": 0, "C": 1, "D": 2, "E": 0, "F": 1}, "minimal_evidence_sets": [["A"]]}
+{"case_id": "appendix_I_classical", "thesis_ref": "I/Figure22", "ranked_units": ["A", "C", "D", "B", "E"], "qrels": {"A": 2, "B": 0, "C": 1, "D": 2, "E": 0, "F": 1}, "minimal_evidence_sets": [["A"]]}

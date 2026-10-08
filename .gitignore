@@ -1,0 +1,45 @@
+# Private inputs, outputs and access values.
+local/
+.env
+.env.*
+!.env.example
+*-private-results-*.zip
+secrets/
+credentials/
+.azure/
+.aws/
+.git-credentials
+.netrc
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Subproject planning and agent files are not repository contents.
+AGENTS.md
+/planung/
+/reference/
+/docs/planning/
+.codex/
+.agents/
+
+# Environments, build products and execution/editor caches.
+.venv/
+.venv-structure/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini

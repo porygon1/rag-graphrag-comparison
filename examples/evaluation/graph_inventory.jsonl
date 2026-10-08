@@ -1,0 +1,35 @@
+{"condition_id": "G0", "artifact_type": "documents", "graph_source_condition": "G0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G0", "artifact_type": "text_units", "graph_source_condition": "G0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G0", "artifact_type": "entities", "graph_source_condition": "G0", "row_count": 28, "unique_id_count": 28, "raw_entity_type_count": 4, "configured_entity_types": ["organization", "person", "geo", "event"]}
+{"condition_id": "G0", "artifact_type": "relationships", "graph_source_condition": "G0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G0", "artifact_type": "communities", "graph_source_condition": "G0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G0", "artifact_type": "community_reports", "graph_source_condition": "G0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G0", "artifact_type": "local_search_traces", "graph_source_condition": "G0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-CHUNK-STRUCT-800-0", "artifact_type": "documents", "graph_source_condition": "G-CHUNK-STRUCT-800-0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-CHUNK-STRUCT-800-0", "artifact_type": "text_units", "graph_source_condition": "G-CHUNK-STRUCT-800-0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-CHUNK-STRUCT-800-0", "artifact_type": "entities", "graph_source_condition": "G-CHUNK-STRUCT-800-0", "row_count": 28, "unique_id_count": 28, "raw_entity_type_count": 4, "configured_entity_types": ["organization", "person", "geo", "event"]}
+{"condition_id": "G-CHUNK-STRUCT-800-0", "artifact_type": "relationships", "graph_source_condition": "G-CHUNK-STRUCT-800-0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-CHUNK-STRUCT-800-0", "artifact_type": "communities", "graph_source_condition": "G-CHUNK-STRUCT-800-0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-CHUNK-STRUCT-800-0", "artifact_type": "community_reports", "graph_source_condition": "G-CHUNK-STRUCT-800-0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-CHUNK-STRUCT-800-0", "artifact_type": "local_search_traces", "graph_source_condition": "G-CHUNK-STRUCT-800-0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-ENTITY-POLICY-PROCESS-ROLE", "artifact_type": "documents", "graph_source_condition": "G-ENTITY-POLICY-PROCESS-ROLE", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-ENTITY-POLICY-PROCESS-ROLE", "artifact_type": "text_units", "graph_source_condition": "G-ENTITY-POLICY-PROCESS-ROLE", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-ENTITY-POLICY-PROCESS-ROLE", "artifact_type": "entities", "graph_source_condition": "G-ENTITY-POLICY-PROCESS-ROLE", "row_count": 66, "unique_id_count": 66, "raw_entity_type_count": 22, "configured_entity_types": ["organization", "person", "geo", "event", "policy", "process", "role", "technical_system", "information_artifact"]}
+{"condition_id": "G-ENTITY-POLICY-PROCESS-ROLE", "artifact_type": "relationships", "graph_source_condition": "G-ENTITY-POLICY-PROCESS-ROLE", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-ENTITY-POLICY-PROCESS-ROLE", "artifact_type": "communities", "graph_source_condition": "G-ENTITY-POLICY-PROCESS-ROLE", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-ENTITY-POLICY-PROCESS-ROLE", "artifact_type": "community_reports", "graph_source_condition": "G-ENTITY-POLICY-PROCESS-ROLE", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-ENTITY-POLICY-PROCESS-ROLE", "artifact_type": "local_search_traces", "graph_source_condition": "G-ENTITY-POLICY-PROCESS-ROLE", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-EMBED-LARGE-1536", "artifact_type": "documents", "graph_source_condition": "G0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-EMBED-LARGE-1536", "artifact_type": "text_units", "graph_source_condition": "G0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-EMBED-LARGE-1536", "artifact_type": "entities", "graph_source_condition": "G0", "row_count": 28, "unique_id_count": 28, "raw_entity_type_count": 4, "configured_entity_types": ["organization", "person", "geo", "event"]}
+{"condition_id": "G-EMBED-LARGE-1536", "artifact_type": "relationships", "graph_source_condition": "G0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-EMBED-LARGE-1536", "artifact_type": "communities", "graph_source_condition": "G0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-EMBED-LARGE-1536", "artifact_type": "community_reports", "graph_source_condition": "G0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-EMBED-LARGE-1536", "artifact_type": "local_search_traces", "graph_source_condition": "G0", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-FINAL", "artifact_type": "documents", "graph_source_condition": "G-ENTITY-POLICY-PROCESS-ROLE", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-FINAL", "artifact_type": "text_units", "graph_source_condition": "G-ENTITY-POLICY-PROCESS-ROLE", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-FINAL", "artifact_type": "entities", "graph_source_condition": "G-ENTITY-POLICY-PROCESS-ROLE", "row_count": 66, "unique_id_count": 66, "raw_entity_type_count": 22, "configured_entity_types": ["organization", "person", "geo", "event", "policy", "process", "role", "technical_system", "information_artifact"]}
+{"condition_id": "G-FINAL", "artifact_type": "relationships", "graph_source_condition": "G-ENTITY-POLICY-PROCESS-ROLE", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-FINAL", "artifact_type": "communities", "graph_source_condition": "G-ENTITY-POLICY-PROCESS-ROLE", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-FINAL", "artifact_type": "community_reports", "graph_source_condition": "G-ENTITY-POLICY-PROCESS-ROLE", "row_count": 28, "unique_id_count": 28}
+{"condition_id": "G-FINAL", "artifact_type": "local_search_traces", "graph_source_condition": "G-ENTITY-POLICY-PROCESS-ROLE", "row_count": 28, "unique_id_count": 28}

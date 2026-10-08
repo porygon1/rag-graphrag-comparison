@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="42mm" viewBox="0 0 160 42" role="img">
+<title>Use the matched GUIDE entity as an entry point into the existing indexed graph</title>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.italic{font-style:italic}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.edge{fill:none;stroke:#333;stroke-width:.3}.node{fill:white;stroke:#444;stroke-width:.27}.paper{fill:white;stroke:#777;stroke-width:.25}.module{fill:#f4f4f4;stroke:#555;stroke-width:.27}.distance{fill:none;stroke:#666;stroke-width:.25;stroke-dasharray:1.2 1.1}</style>
+<text x="2" y="5" class="bold" text-anchor="start">Entry entity: GUIDE</text>
+<path d="M42 17.5H64" class="edge"/>
+<path d="M96 17.5H117" class="edge"/>
+<rect x="2" y="12" width="40" height="11" rx="5.5" class="node"/>
+<text x="22" y="19.5" class="bold" text-anchor="middle">GUEST</text>
+<rect x="64" y="12" width="32" height="11" rx="5.5" class="node"/>
+<text x="80" y="19.5" class="bold" text-anchor="middle">GUIDE</text>
+<rect x="117" y="12" width="41" height="11" rx="5.5" class="node"/>
+<text x="137.5" y="19.5" class="bold" text-anchor="middle">DESK</text>
+<path d="M80 23V35.8" class="process"/>
+<text x="2" y="35" class="bold">Candidate information</text>
+<path d="M2 41C2 39 4 39 6 39H74C78 39 80 38 80 36C80 38 82 39 86 39H154C156 39 158 39 158 41" class="edge" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

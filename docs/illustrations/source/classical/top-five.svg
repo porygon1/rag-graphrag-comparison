@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="189mm" viewBox="0 0 160 189" role="img">
+<title>Descending cosine scores determine the five chunks used for both answer generation and evaluation</title>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.italic{font-style:italic}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.edge{fill:none;stroke:#333;stroke-width:.3}.node{fill:white;stroke:#444;stroke-width:.27}.paper{fill:white;stroke:#777;stroke-width:.25}.module{fill:#f4f4f4;stroke:#555;stroke-width:.27}.distance{fill:none;stroke:#666;stroke-width:.25;stroke-dasharray:1.2 1.1}</style>
+<rect x="2" y="0" width="156" height="18" rx="1" class="paper"/>
+<text x="7" y="7" class="bold" text-anchor="start">Search pool: all N indexed chunks</text>
+<text x="7" y="14" class="" text-anchor="start">Each chunk has a cosine score from the query comparison.</text>
+<path d="M80 18V23.8" class="process"/>
+<rect x="2" y="24" width="156" height="21" rx="3" class="module"/>
+<text x="7" y="31" class="bold" text-anchor="start">Rank and select (NumPy)</text>
+<text x="7" y="38" class="" text-anchor="start">Sort by decreasing cosine similarity and take positions 1-5.</text>
+<path d="M80 45V47.8" class="process"/>
+<path d="M10 54 Q10 51 14 51 H75 Q80 51 80 48 Q80 51 85 51 H154 Q158 51 158 54" class="edge"/>
+<text x="16" y="59" class="small bold" text-anchor="middle">Rank</text>
+<text x="29" y="59" class="small bold" text-anchor="start">Chunk/page</text>
+<text x="56" y="59" class="small bold" text-anchor="start">Content (shortened)</text>
+<text x="128" y="59" class="small bold" text-anchor="middle">Cosine</text>
+<text x="148" y="59" class="small bold" text-anchor="middle">Context</text>
+<rect x="10" y="63" width="148" height="65" rx="0" class="module"/>
+<text x="16" y="72" class="small" text-anchor="middle">1</text>
+<text x="29" y="70" class="small bold" text-anchor="start">c1</text>
+<text x="29" y="75" class="small" text-anchor="start">A / 1</text>
+<text x="56" y="70" class="small" text-anchor="start">Guide books and</text>
+<text x="56" y="75" class="small" text-anchor="start">welcomes guests.</text>
+<text x="128" y="72" class="small bold" text-anchor="middle">0.88</text>
+<text x="148" y="72" class="small" text-anchor="middle">[1]</text>
+<path d="M14 78H154" class="rule"/>
+<text x="16" y="84" class="small" text-anchor="middle">2</text>
+<text x="29" y="82" class="small bold" text-anchor="start">c3</text>
+<text x="29" y="87" class="small" text-anchor="start">C / 2</text>
+<text x="56" y="82" class="small" text-anchor="start">Guest badges must</text>
+<text x="56" y="87" class="small" text-anchor="start">show the booked session.</text>
+<text x="128" y="84" class="small bold" text-anchor="middle">0.83</text>
+<text x="148" y="84" class="small" text-anchor="middle">[2]</text>
+<path d="M14 90H154" class="rule"/>
+<text x="16" y="96" class="small" text-anchor="middle">3</text>
+<text x="29" y="94" class="small bold" text-anchor="start">c4</text>
+<text x="29" y="99" class="small" text-anchor="start">D / 1</text>
+<text x="56" y="94" class="small" text-anchor="start">Guides welcome guests</text>
+<text x="56" y="99" class="small" text-anchor="start">at the desk.</text>
+<text x="128" y="96" class="small bold" text-anchor="middle">0.79</text>
+<text x="148" y="96" class="small" text-anchor="middle">[3]</text>
+<path d="M14 102H154" class="rule"/>
+<text x="16" y="108" class="small" text-anchor="middle">4</text>
+<text x="29" y="106" class="small bold" text-anchor="start">c2</text>
+<text x="29" y="111" class="small" text-anchor="start">B / 1</text>
+<text x="56" y="106" class="small" text-anchor="start">Projector repairs go to</text>
+<text x="56" y="111" class="small" text-anchor="start">the repair desk.</text>
+<text x="128" y="108" class="small bold" text-anchor="middle">0.60</text>
+<text x="148" y="108" class="small" text-anchor="middle">[4]</text>
+<path d="M14 114H154" class="rule"/>
+<text x="16" y="120" class="small" text-anchor="middle">5</text>
+<text x="29" y="118" class="small bold" text-anchor="start">c5</text>
+<text x="29" y="123" class="small" text-anchor="start">E / 3</text>
+<text x="56" y="118" class="small" text-anchor="start">Spare bulbs are ordered</text>
+<text x="56" y="123" class="small" text-anchor="start">via the repair desk.</text>
+<text x="128" y="120" class="small bold" text-anchor="middle">0.55</text>
+<text x="148" y="120" class="small" text-anchor="middle">[5]</text>
+<text x="16" y="142" class="small" text-anchor="middle">6</text>
+<text x="29" y="140" class="small bold" text-anchor="start">c6</text>
+<text x="29" y="145" class="small" text-anchor="start">F / 1</text>
+<text x="56" y="140" class="small" text-anchor="start">Guest parking is</text>
+<text x="56" y="145" class="small" text-anchor="start">beside the planetarium.</text>
+<text x="128" y="142" class="small bold" text-anchor="middle">0.41</text>
+<text x="148" y="142" class="small" text-anchor="middle">-</text>
+<text x="153" y="134" class="small bold" text-anchor="end">Top-5 cutoff</text>
+<path d="M10 151H158" class="rule"/>
+<text x="29" y="157" class="small" text-anchor="start">...</text>
+<path d="M10 128H2V161H39.5V167.8" class="process"/>
+<path d="M39.5 161H122.5V167.8" class="process"/>
+<rect x="2" y="168" width="75" height="19" rx="3" class="module"/>
+<rect x="87" y="168" width="71" height="19" rx="3" class="module"/>
+<text x="39.5" y="175" class="bold" text-anchor="middle">Azure answer generation</text>
+<text x="39.5" y="183" class="small" text-anchor="middle">Five full texts, in this order.</text>
+<text x="122.5" y="175" class="bold" text-anchor="middle">Retrieval evaluation</text>
+<text x="122.5" y="183" class="small" text-anchor="middle">The same five positions.</text>
+</svg>

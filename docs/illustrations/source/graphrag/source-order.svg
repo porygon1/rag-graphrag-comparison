@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="183mm" viewBox="0 0 160 183" role="img">
+<title>How entity rank and relationship count determine the Sources order</title>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.italic{font-style:italic}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.edge{fill:none;stroke:#333;stroke-width:.3}.node{fill:white;stroke:#444;stroke-width:.27}.paper{fill:white;stroke:#777;stroke-width:.25}.module{fill:#f4f4f4;stroke:#555;stroke-width:.27}.distance{fill:none;stroke:#666;stroke-width:.25;stroke-dasharray:1.2 1.1}</style>
+<rect x="2" y="0" width="156" height="42" rx="1" class="paper"/>
+<text x="7" y="7" class="bold" text-anchor="start">Matched entities from the vector search</text>
+<text x="7" y="15" class="small bold" text-anchor="start">Search rank</text>
+<text x="32" y="15" class="small bold" text-anchor="start">Entity</text>
+<text x="88" y="15" class="small bold" text-anchor="start">L2 distance</text>
+<text x="119" y="15" class="small bold" text-anchor="start">Linked text units</text>
+<path d="M7 18H153" class="rule"/>
+<text x="11" y="25" class="small" text-anchor="start">1</text>
+<text x="32" y="25" class="small" text-anchor="start">GUIDE</text>
+<text x="98" y="25" class="small" text-anchor="middle">0.20</text>
+<text x="119" y="25" class="small" text-anchor="start">t4, t1</text>
+<text x="11" y="32" class="small" text-anchor="start">2</text>
+<text x="32" y="32" class="small" text-anchor="start">REPAIR DESK</text>
+<text x="98" y="32" class="small" text-anchor="middle">0.35</text>
+<text x="119" y="32" class="small" text-anchor="start">t2, t5</text>
+<text x="11" y="39" class="small" text-anchor="start">3</text>
+<text x="32" y="39" class="small" text-anchor="start">GUEST</text>
+<text x="98" y="39" class="small" text-anchor="middle">0.50</text>
+<text x="119" y="39" class="small" text-anchor="start">t3, t6, t1, t4</text>
+<path d="M80 42V47.8" class="process"/>
+<rect x="2" y="48" width="156" height="35" rx="2" class="module"/>
+<text x="7" y="55" class="bold" text-anchor="start">Source ordering (GraphRAG 3.1.0)</text>
+<text x="7" y="62" class="small" text-anchor="start">GraphRAG places units from entities with a lower search rank first.</text>
+<text x="7" y="69" class="small" text-anchor="start">Within each entity, a higher relationship count comes first.</text>
+<text x="7" y="76" class="small" text-anchor="start">Equal counts retain the existing text-unit order.</text>
+<path d="M80 83V87.8" class="process"/>
+<path d="M2 93C2 91 4 91 6 91H74C78 91 80 90 80 88C80 90 82 91 86 91H154C156 91 158 91 158 93" class="edge" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="7" y="101" class="small bold" text-anchor="start">Source</text>
+<text x="7" y="106" class="small bold" text-anchor="start">position</text>
+<text x="42" y="104" class="small bold" text-anchor="start">Text unit</text>
+<text x="92" y="104" class="small bold" text-anchor="middle">Entity search rank</text>
+<text x="126" y="101" class="small bold" text-anchor="middle">Relationship</text>
+<text x="126" y="106" class="small bold" text-anchor="middle">count</text>
+<rect x="2" y="110" width="156" height="54" class="paper"/>
+<rect x="2.2" y="110.2" width="155.6" height="17.6" fill="#f4f4f4"/>
+<rect x="2.2" y="146.2" width="155.6" height="17.6" fill="#f4f4f4"/>
+<text x="15" y="116" class="small" text-anchor="start">1</text>
+<text x="46" y="116" class="small" text-anchor="start">t1</text>
+<text x="92" y="116" class="small bold" text-anchor="middle">1</text>
+<text x="126" y="116" class="small bold" text-anchor="middle">2</text>
+<path d="M7 119H153" class="rule"/>
+<text x="15" y="125" class="small" text-anchor="start">2</text>
+<text x="46" y="125" class="small" text-anchor="start">t4</text>
+<text x="92" y="125" class="small bold" text-anchor="middle">1</text>
+<text x="126" y="125" class="small bold" text-anchor="middle">1</text>
+<path d="M7 128H153" class="rule"/>
+<text x="15" y="134" class="small" text-anchor="start">3</text>
+<text x="46" y="134" class="small" text-anchor="start">t2</text>
+<text x="92" y="134" class="small bold" text-anchor="middle">2</text>
+<text x="126" y="134" class="small bold" text-anchor="middle">1</text>
+<path d="M7 137H153" class="rule"/>
+<text x="15" y="143" class="small" text-anchor="start">4</text>
+<text x="46" y="143" class="small" text-anchor="start">t5</text>
+<text x="92" y="143" class="small bold" text-anchor="middle">2</text>
+<text x="126" y="143" class="small bold" text-anchor="middle">1</text>
+<path d="M7 146H153" class="rule"/>
+<text x="15" y="152" class="small" text-anchor="start">5</text>
+<text x="46" y="152" class="small" text-anchor="start">t3</text>
+<text x="92" y="152" class="small bold" text-anchor="middle">3</text>
+<text x="126" y="152" class="small bold" text-anchor="middle">1</text>
+<path d="M7 155H153" class="rule"/>
+<text x="15" y="161" class="small" text-anchor="start">6</text>
+<text x="46" y="161" class="small" text-anchor="start">t6</text>
+<text x="92" y="161" class="small bold" text-anchor="middle">3</text>
+<text x="126" y="161" class="small bold" text-anchor="middle">1</text>
+<text x="2" y="174" class="small" text-anchor="start">The count refers to relationships of the assigned entity linked to each unit.</text>
+<text x="2" y="181" class="small" text-anchor="start">For GUIDE, t1 comes before t4 because its count is 2 rather than 1.</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="70mm" viewBox="0 0 160 70" role="img" aria-labelledby="title desc">
+<title id="title">The LLM prepares a report for a community</title><desc id="desc">Entity and relationship information belonging to illustrative community C1 is summarised by the configured completion model. The report excerpt is constructed from the guest example, not recorded model output.</desc>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.paper{fill:white;stroke:#555;stroke-width:.25}.module{fill:#f2f2f2;stroke:#444;stroke-width:.27}</style>
+<g id="community-information"><path d="M2 2H70V22H2Z" fill="white" stroke="#888" stroke-width=".22"/><text x="7" y="9" class="bold">Community C1</text><text x="7" y="16" class="small">Entity and relationship information</text></g>
+<path class="process" d="M70 12H101.8"/>
+<g id="report-llm"><rect class="module" x="102" y="1" width="56" height="23" rx="3"/><text x="130" y="10" text-anchor="middle" class="bold">Azure LLM</text><text x="130" y="18" text-anchor="middle">gpt-4.1-mini</text></g>
+<path class="process" d="M130 24V32H80V38.8"/>
+<g id="report-excerpt"><path class="paper" d="M2 39H152L158 45V68H2Z"/><path class="paper" d="M152 39V45H158"/><text x="8" y="46.5" class="bold">Community report C1 / illustrative excerpt</text><path class="rule" d="M8 51H152"/><text x="8" y="57.5">Guides book and welcome guests. Desk processes</text><text x="8" y="63.3">the bookings submitted by guides.</text></g>
+</svg>

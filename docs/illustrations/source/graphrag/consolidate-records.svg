@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="105mm" viewBox="0 0 160 105" role="img">
+<title>Group matching records and summarise their complementary descriptions</title>
+<desc>The simplified GUIDE/PERSON description from t1 covers booking; the description from t4 covers welcomeion. GraphRAG groups matching names and types. An LLM combines their descriptions into the illustrated result. GraphRAG preserves both text-unit links independently of the generated description.</desc>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.edge{fill:none;stroke:#333;stroke-width:.3}.relation{fill:white;stroke:#888;stroke-width:.2}.module{fill:#f2f2f2;stroke:#444;stroke-width:.27}</style>
+<rect x="2" y="0" width="73" height="30" rx="1" class="relation"/>
+<text x="7" y="6" class="bold">GUIDE</text>
+<text x="43" y="6">PERSON</text>
+<path class="rule" d="M7 9H70"/>
+<text x="7" y="15">Person who books</text>
+<text x="7" y="21">guests.</text>
+<text x="7" y="27" class="small">Text unit: t1</text>
+<rect x="85" y="0" width="73" height="30" rx="1" class="relation"/>
+<text x="90" y="6" class="bold">GUIDE</text>
+<text x="126" y="6">PERSON</text>
+<path class="rule" d="M90 9H153"/>
+<text x="90" y="15">Person who welcomes</text>
+<text x="90" y="21">guests.</text>
+<text x="90" y="27" class="small">Text unit: t4</text>
+<path class="edge" d="M38.5 30V34.5H121.5V30"/>
+<path class="process" d="M38.5 34.5V39.8"/>
+<rect x="2" y="40" width="73" height="24" rx="1.2" class="module"/>
+<text x="38.5" y="47" class="bold" text-anchor="middle">Grouping (GraphRAG 3.1.0)</text>
+<text x="38.5" y="54" class="small" text-anchor="middle">GraphRAG groups records</text>
+<text x="38.5" y="60" class="small" text-anchor="middle">with the same name and type.</text>
+<path class="process" d="M75 52H84.8"/>
+<rect x="85" y="40" width="73" height="24" rx="3" class="module"/>
+<text x="121.5" y="47" class="bold" text-anchor="middle">Description summary (Azure LLM)</text>
+<text x="121.5" y="54" class="small" text-anchor="middle">gpt-4.1-mini</text>
+<text x="121.5" y="60" class="small" text-anchor="middle">The LLM combines descriptions.</text>
+<path class="process" d="M121.5 64V69H80V73.8"/>
+<rect x="2" y="74" width="156" height="29" rx="1" class="relation"/>
+<text x="7" y="81" class="bold">GUIDE</text>
+<text x="48" y="81">PERSON</text>
+<text x="153" y="81" class="small bold" text-anchor="end">Merged record</text>
+<path class="rule" d="M7 85H153"/>
+<text x="7" y="92">Person who books and welcomes guests.</text>
+<text x="7" y="100" class="small">GraphRAG retains both text-unit links: <tspan class="bold">t1, t4</tspan>.</text>
+</svg>

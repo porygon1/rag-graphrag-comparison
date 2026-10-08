@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="64mm" viewBox="0 0 160 64" role="img" aria-labelledby="title desc">
+<title id="title">Linked outputs retained for Local Search</title><desc id="desc">Entity and relationship records, communities and reports, original text units with document and page associations, and the three G0 embedding welcomeions are retained. Entity vectors provide the entry point for Local Search. No query has been processed yet.</desc>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.rule{fill:none;stroke:#999;stroke-width:.22}</style>
+<g id="stored-outputs"><path class="rule" d="M2 1H158M2 14H158M2 27H158M2 40H158M2 53H158"/>
+<text x="2" y="7" class="bold">Graph records</text><text x="54" y="7">Entities and relationships</text><text x="54" y="12" class="small">Descriptions and links to text units</text>
+<text x="2" y="20" class="bold">Communities</text><text x="54" y="20">Membership links and community reports</text><text x="54" y="25" class="small">For example, C1 and its report</text>
+<text x="2" y="33" class="bold">Source records</text><text x="54" y="33">Text units and retained source mapping</text><text x="54" y="38" class="small">t1: Guideline A, page 1 (illustrative)</text>
+<text x="2" y="46" class="bold">Stored embeddings</text><text x="54" y="46">Vectors for entity text, text units and reports</text><text x="54" y="51" class="small">Each vector remains linked to its record.</text></g>
+<text x="2" y="62" class="bold">Result: index prepared for Local Search</text>
+</svg>

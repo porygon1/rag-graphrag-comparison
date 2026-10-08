@@ -1,0 +1,218 @@
+{
+  "schema_version": "graphrag-index-artifacts-v1",
+  "status": "completed",
+  "graphrag_version": "3.1.0",
+  "run_id": "rfc2795-azure-example",
+  "condition_id": "G0",
+  "question_set_version": "DEMO-RFC2795-Q1",
+  "artifacts": {
+    "chunks": {
+      "path": "chunks.jsonl",
+      "sha256": "e00b7daaaa32c344b7f1aa8ef9086d6d484301050d53d370d92cad9e30e9173f"
+    },
+    "chunk_origins": {
+      "path": "chunk_origins.jsonl",
+      "sha256": "c5efec73a3e086a1f821383b558c33bbcbd69b0318371bb4495cc0738bb71be9"
+    },
+    "questions": {
+      "path": "questions.jsonl",
+      "sha256": "6aaf3799215ee39c724c4e2f33a070f241b66967ad48dc92a10c8e8b0cdd0216"
+    },
+    "graph_inputs": {
+      "path": "input/input_records.jsonl",
+      "sha256": "77646a1d272fa6d32502eef337467d9ddae24546886d8044e62cfbe83436d264"
+    },
+    "input_projection": {
+      "path": "input_projection.jsonl",
+      "sha256": "d6f5ef1491d7fb0ef67104682f9565d99e54c54d7339ba1e630b0c8e34d9e296"
+    },
+    "configuration": {
+      "path": "configuration.json",
+      "sha256": "c683aff4d98b80218fff76eb37aa5bfbd7fd6f6f574efd409854340cd90cb647"
+    },
+    "settings": {
+      "path": "settings.yaml",
+      "sha256": "8226f87f923881e3a7b1835b8cc7f5cd9bd63a851a74a2bbc617f29c0287c72e"
+    },
+    "documents": {
+      "path": "output/documents.parquet",
+      "sha256": "38f3a8ed02fe7879fd41d8ae5349b806aa6d3b0765923c8ed57e076729194d65"
+    },
+    "text_units": {
+      "path": "output/text_units.parquet",
+      "sha256": "84d0af6822b06dbc38606a48edc9e9ca0f5291af9dc03bd79de2fb0d98e05f6e"
+    },
+    "entities": {
+      "path": "output/entities.parquet",
+      "sha256": "77adc191e1198224e6bdd3a261275a3b0acd80743cd166e9cd1b906efd7a60b2"
+    },
+    "relationships": {
+      "path": "output/relationships.parquet",
+      "sha256": "660d4e9d3e6b58aea4791e8aa5d21debd6e2566cda464db1130ded4efa8e67b0"
+    },
+    "communities": {
+      "path": "output/communities.parquet",
+      "sha256": "1cdb761246eca4455870b981bf65df205e7dd56515b7e6d91d4eb38830cfdf11"
+    },
+    "community_reports": {
+      "path": "output/community_reports.parquet",
+      "sha256": "5b376d7f4c967cc6e4b9aed14f05bb5b5945a518115d653c0bb5b9ecb974d227"
+    },
+    "vector_file:lancedb/community_full_content.lance/_indices/bcac1971-ef88-4d12-adc8-3bd566643742/auxiliary.idx": {
+      "path": "output/lancedb/community_full_content.lance/_indices/bcac1971-ef88-4d12-adc8-3bd566643742/auxiliary.idx",
+      "sha256": "8c8158deb59a88ddcfb41686139c7c9acfa3c80e1608dde2f58863e1ab362161"
+    },
+    "vector_file:lancedb/community_full_content.lance/_indices/bcac1971-ef88-4d12-adc8-3bd566643742/index.idx": {
+      "path": "output/lancedb/community_full_content.lance/_indices/bcac1971-ef88-4d12-adc8-3bd566643742/index.idx",
+      "sha256": "5366fe8e3ec510fbc6ec31f788c98024e7e506b1da9cd309dd12f7f358039fe8"
+    },
+    "vector_file:lancedb/community_full_content.lance/_transactions/0-ed9be36c-c97d-4cf0-9980-61286744f3fe.txn": {
+      "path": "output/lancedb/community_full_content.lance/_transactions/0-ed9be36c-c97d-4cf0-9980-61286744f3fe.txn",
+      "sha256": "0fcdfc5fa4674c38a735456f286aa966d00a664d1aa5c416ac305a5d1c2f14a9"
+    },
+    "vector_file:lancedb/community_full_content.lance/_transactions/1-8a2a9478-d3a6-4338-803f-a7ddf27e5e55.txn": {
+      "path": "output/lancedb/community_full_content.lance/_transactions/1-8a2a9478-d3a6-4338-803f-a7ddf27e5e55.txn",
+      "sha256": "1ef90ab4b46851477e241ac4b649e8365637b6c36c9a6ed63f21508fe7eb7dd5"
+    },
+    "vector_file:lancedb/community_full_content.lance/_transactions/2-13afbad9-ccff-4bbc-bb85-652c8a24e004.txn": {
+      "path": "output/lancedb/community_full_content.lance/_transactions/2-13afbad9-ccff-4bbc-bb85-652c8a24e004.txn",
+      "sha256": "5368a2f39c1b0f8a0c81b2e640c44153347a74050cc5dfd96af8a27529724b91"
+    },
+    "vector_file:lancedb/community_full_content.lance/_transactions/3-d84b4935-4cb9-4b8a-91a8-91d92f17c057.txn": {
+      "path": "output/lancedb/community_full_content.lance/_transactions/3-d84b4935-4cb9-4b8a-91a8-91d92f17c057.txn",
+      "sha256": "3e342e05726fe47046c58d30dadaecaf94895e17476c54922670c52823a503d5"
+    },
+    "vector_file:lancedb/community_full_content.lance/_versions/1.manifest": {
+      "path": "output/lancedb/community_full_content.lance/_versions/1.manifest",
+      "sha256": "7584b35eb61b59150ec5e5cda717bdbb8323bcae3f71d2e94b3fc41f7f384a50"
+    },
+    "vector_file:lancedb/community_full_content.lance/_versions/2.manifest": {
+      "path": "output/lancedb/community_full_content.lance/_versions/2.manifest",
+      "sha256": "0b95a8003218da73b0bdef9a997677442b5f2d52796276804d7e38eb099803df"
+    },
+    "vector_file:lancedb/community_full_content.lance/_versions/3.manifest": {
+      "path": "output/lancedb/community_full_content.lance/_versions/3.manifest",
+      "sha256": "4bb91d1fa67f49302c8afcf1e675b6647a69f616f69a671335136537ae479b8f"
+    },
+    "vector_file:lancedb/community_full_content.lance/_versions/4.manifest": {
+      "path": "output/lancedb/community_full_content.lance/_versions/4.manifest",
+      "sha256": "16947db2ec5c652f495fa75469c93d2bfc2e1237f3ef85f892dbf6dc8b084376"
+    },
+    "vector_file:lancedb/community_full_content.lance/data/03af84c7-6e3f-4108-b0a5-581df7d742bc.lance": {
+      "path": "output/lancedb/community_full_content.lance/data/03af84c7-6e3f-4108-b0a5-581df7d742bc.lance",
+      "sha256": "6688c6f3721e428513e34bba4d7f90eea76264a691c6daa0fe4b0425fecf4c02"
+    },
+    "vector_file:lancedb/community_full_content.lance/data/10d84716-32d0-46a1-8576-739b05c258a1.lance": {
+      "path": "output/lancedb/community_full_content.lance/data/10d84716-32d0-46a1-8576-739b05c258a1.lance",
+      "sha256": "2f126f1f1d58af33d474a31a448fe3a51973d9f7262494abd802163cd36e68a0"
+    },
+    "vector_file:lancedb/entity_description.lance/_indices/7ad40d5f-e48c-41d5-a708-df85bc0c170e/auxiliary.idx": {
+      "path": "output/lancedb/entity_description.lance/_indices/7ad40d5f-e48c-41d5-a708-df85bc0c170e/auxiliary.idx",
+      "sha256": "dd27e2f4f73ec1284849bf99f3e3cfdb5fbfd727bb59407aed1871b2f1ed5f2f"
+    },
+    "vector_file:lancedb/entity_description.lance/_indices/7ad40d5f-e48c-41d5-a708-df85bc0c170e/index.idx": {
+      "path": "output/lancedb/entity_description.lance/_indices/7ad40d5f-e48c-41d5-a708-df85bc0c170e/index.idx",
+      "sha256": "5366fe8e3ec510fbc6ec31f788c98024e7e506b1da9cd309dd12f7f358039fe8"
+    },
+    "vector_file:lancedb/entity_description.lance/_transactions/0-904e94c3-b87d-4ca6-ace1-954fffb33ca5.txn": {
+      "path": "output/lancedb/entity_description.lance/_transactions/0-904e94c3-b87d-4ca6-ace1-954fffb33ca5.txn",
+      "sha256": "a433e3fa4f19be1d4abbd3e307d2e60d0c6f5e4567a0b48c5dd15db4af593123"
+    },
+    "vector_file:lancedb/entity_description.lance/_transactions/1-86270f0b-d419-49f2-835a-0ddf6b7dff77.txn": {
+      "path": "output/lancedb/entity_description.lance/_transactions/1-86270f0b-d419-49f2-835a-0ddf6b7dff77.txn",
+      "sha256": "2b4be736720befae48dd0a18c0f1742b8b46f3be4e8a6bdcc44d7140366b9e9e"
+    },
+    "vector_file:lancedb/entity_description.lance/_transactions/2-f1dd64bf-b446-40ec-8ab0-8fd62e5bbd3a.txn": {
+      "path": "output/lancedb/entity_description.lance/_transactions/2-f1dd64bf-b446-40ec-8ab0-8fd62e5bbd3a.txn",
+      "sha256": "c512f87a7a074b27529a0a505a5417f67deed310f78548ac1ff61c806af1fff4"
+    },
+    "vector_file:lancedb/entity_description.lance/_transactions/3-6310c6e3-e6d9-452d-9682-0965c8618a07.txn": {
+      "path": "output/lancedb/entity_description.lance/_transactions/3-6310c6e3-e6d9-452d-9682-0965c8618a07.txn",
+      "sha256": "7bac98c65b89404cef0b3c417d115aa17a08060ca4e4f9a00323b9eb12bb63a8"
+    },
+    "vector_file:lancedb/entity_description.lance/_transactions/4-5dcb11a0-9800-482b-aa7c-f86a62200553.txn": {
+      "path": "output/lancedb/entity_description.lance/_transactions/4-5dcb11a0-9800-482b-aa7c-f86a62200553.txn",
+      "sha256": "277dc8290542a984a30296e43b767d7fa396a91bad4e3e701cc90a451d359ce3"
+    },
+    "vector_file:lancedb/entity_description.lance/_versions/1.manifest": {
+      "path": "output/lancedb/entity_description.lance/_versions/1.manifest",
+      "sha256": "ced58548d8a5c59676e4625ff3a14162c9ea953f2acb1bea2719fa32faa88567"
+    },
+    "vector_file:lancedb/entity_description.lance/_versions/2.manifest": {
+      "path": "output/lancedb/entity_description.lance/_versions/2.manifest",
+      "sha256": "a9e9f8387985ec50e4d88164876e52791907acb3cbacc6d4692cb3b52c3612ca"
+    },
+    "vector_file:lancedb/entity_description.lance/_versions/3.manifest": {
+      "path": "output/lancedb/entity_description.lance/_versions/3.manifest",
+      "sha256": "2f5b66799f6f023125d5282dd393b07ddc62b83eefaf8d9b2a6ce1a9f1d42589"
+    },
+    "vector_file:lancedb/entity_description.lance/_versions/4.manifest": {
+      "path": "output/lancedb/entity_description.lance/_versions/4.manifest",
+      "sha256": "9e9feabd0ea1ea189843eae36ec0e5c21000cb839b9cc174052b324507cb1b0d"
+    },
+    "vector_file:lancedb/entity_description.lance/_versions/5.manifest": {
+      "path": "output/lancedb/entity_description.lance/_versions/5.manifest",
+      "sha256": "26b7b67556c6acfd891a018c6218cde41369635ca440674cc7a6fbd236262c74"
+    },
+    "vector_file:lancedb/entity_description.lance/data/2ced1177-0588-4899-b372-ce5750000b61.lance": {
+      "path": "output/lancedb/entity_description.lance/data/2ced1177-0588-4899-b372-ce5750000b61.lance",
+      "sha256": "a1827807597952c1b10d45008b9ea5524c204fa53f064f39920f0f8b11c6c544"
+    },
+    "vector_file:lancedb/entity_description.lance/data/8bca7b61-36fd-41c3-a89d-9fbc3d506405.lance": {
+      "path": "output/lancedb/entity_description.lance/data/8bca7b61-36fd-41c3-a89d-9fbc3d506405.lance",
+      "sha256": "a9d58dabed979a71cf3e3034d0ff2ec34a8dba4f9258be2a2af949bf41104e81"
+    },
+    "vector_file:lancedb/entity_description.lance/data/e6723af4-177a-448f-84d6-4789c3daa74d.lance": {
+      "path": "output/lancedb/entity_description.lance/data/e6723af4-177a-448f-84d6-4789c3daa74d.lance",
+      "sha256": "2f126f1f1d58af33d474a31a448fe3a51973d9f7262494abd802163cd36e68a0"
+    },
+    "vector_file:lancedb/text_unit_text.lance/_indices/49556b62-e5a7-4960-a5d4-e86cb8e39ddd/auxiliary.idx": {
+      "path": "output/lancedb/text_unit_text.lance/_indices/49556b62-e5a7-4960-a5d4-e86cb8e39ddd/auxiliary.idx",
+      "sha256": "c7bb75522cd8782397954601a77a6d6355b0f68f478658420fb2fee454c07538"
+    },
+    "vector_file:lancedb/text_unit_text.lance/_indices/49556b62-e5a7-4960-a5d4-e86cb8e39ddd/index.idx": {
+      "path": "output/lancedb/text_unit_text.lance/_indices/49556b62-e5a7-4960-a5d4-e86cb8e39ddd/index.idx",
+      "sha256": "0c2b4a03b16681f97fdc49789690d9fdef8272f9f14ae045c5c2ab12389e0d55"
+    },
+    "vector_file:lancedb/text_unit_text.lance/_transactions/0-17890429-6b79-4912-b6f3-cdf9ae1ec226.txn": {
+      "path": "output/lancedb/text_unit_text.lance/_transactions/0-17890429-6b79-4912-b6f3-cdf9ae1ec226.txn",
+      "sha256": "04150ef3a49c6e64b6ba6c6a59bde63cbd1cd48930f5f6bec0cbca5a21a1e34a"
+    },
+    "vector_file:lancedb/text_unit_text.lance/_transactions/1-3dfa2ba1-b257-46ae-9404-7c4b6ba938ab.txn": {
+      "path": "output/lancedb/text_unit_text.lance/_transactions/1-3dfa2ba1-b257-46ae-9404-7c4b6ba938ab.txn",
+      "sha256": "0abc184ece50e8ec88f8eb99ad52c66efc54981a509868aedf72768ee1bea0be"
+    },
+    "vector_file:lancedb/text_unit_text.lance/_transactions/2-d49ab162-2adf-4061-b9d1-0808d9014b76.txn": {
+      "path": "output/lancedb/text_unit_text.lance/_transactions/2-d49ab162-2adf-4061-b9d1-0808d9014b76.txn",
+      "sha256": "1372639e90170d912940ec7f2e6f20f3c270dfc04cbd7ead13cfba5fe9e9fd96"
+    },
+    "vector_file:lancedb/text_unit_text.lance/_transactions/3-7a1c6b71-ee1d-415e-8c10-0e56db2d44a5.txn": {
+      "path": "output/lancedb/text_unit_text.lance/_transactions/3-7a1c6b71-ee1d-415e-8c10-0e56db2d44a5.txn",
+      "sha256": "8e6aa69aaa122df2606e09ff38e38104cf6d5ba7d585fe8ca4536054507fd340"
+    },
+    "vector_file:lancedb/text_unit_text.lance/_versions/1.manifest": {
+      "path": "output/lancedb/text_unit_text.lance/_versions/1.manifest",
+      "sha256": "b6db2eb6735641a7bf9e51c4ab943ba8e47a672dc98b8b339f7e41c0278d6abd"
+    },
+    "vector_file:lancedb/text_unit_text.lance/_versions/2.manifest": {
+      "path": "output/lancedb/text_unit_text.lance/_versions/2.manifest",
+      "sha256": "4b25307fb715b8872c76fdbede2989c4e29028f450161e4d47a83366f6265a93"
+    },
+    "vector_file:lancedb/text_unit_text.lance/_versions/3.manifest": {
+      "path": "output/lancedb/text_unit_text.lance/_versions/3.manifest",
+      "sha256": "d1e7b98520b11db176305474bcbdfb9485b76451345ca738745ce3aa350c6524"
+    },
+    "vector_file:lancedb/text_unit_text.lance/_versions/4.manifest": {
+      "path": "output/lancedb/text_unit_text.lance/_versions/4.manifest",
+      "sha256": "71cb962279e34ae2cde82a1b18c2f8cdb7217bd504ffbacefbbaeb31f9767d2d"
+    },
+    "vector_file:lancedb/text_unit_text.lance/data/176d0ae6-ed67-4984-8dec-e5f4f6ce9ab0.lance": {
+      "path": "output/lancedb/text_unit_text.lance/data/176d0ae6-ed67-4984-8dec-e5f4f6ce9ab0.lance",
+      "sha256": "55f874da48b372e6e2cb35ba105887fc6cdfc87f2a8da3020d2d9c46e125e03e"
+    },
+    "vector_file:lancedb/text_unit_text.lance/data/2a998b3c-2db2-4bb8-9f2f-9af09c4f0211.lance": {
+      "path": "output/lancedb/text_unit_text.lance/data/2a998b3c-2db2-4bb8-9f2f-9af09c4f0211.lance",
+      "sha256": "2f126f1f1d58af33d474a31a448fe3a51973d9f7262494abd802163cd36e68a0"
+    }
+  }
+}

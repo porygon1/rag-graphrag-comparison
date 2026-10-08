@@ -1,0 +1,263 @@
+{
+  "references": {
+    "4": "D. Edge et al. From local to global: A Graph RAG approach to query-focused summarization. arXiv:2404.16130v2, 2025. https://arxiv.org/abs/2404.16130",
+    "17": "OpenAI. Vector embeddings. API documentation. https://developers.openai.com/api/docs/guides/embeddings",
+    "21": "K. Järvelin and J. Kekäläinen. Cumulated gain-based evaluation of IR techniques. ACM Transactions on Information Systems 20(4), 422-446, 2002. https://doi.org/10.1145/582415.582418",
+    "35": "Microsoft. GraphRAG, version 3.1.0. Source code. https://github.com/microsoft/graphrag/tree/v3.1.0",
+    "36": "graspologic developers. Partition: hierarchical_leiden. Documentation. https://graspologic-org.github.io/graspologic/latest/reference/reference/partition.html",
+    "37": "LanceDB. Vector search. Documentation. https://docs.lancedb.com/search/vector-search",
+    "38": "C. D. Manning, P. Raghavan and H. Schütze. Introduction to Information Retrieval. Cambridge University Press, 2008, Sections 6.3 and 8.4. https://nlp.stanford.edu/IR-book/"
+  },
+  "fiction": "The figures use a fictional planetarium guideline. Passages, IDs, model responses, scores, counts and grades are illustrative, not measured study results. N denotes the number of indexed chunks.",
+  "thesis": "JH. From Guidelines to Grounded Answers: Answer Quality and Configuration Effects in Vector RAG and Microsoft GraphRAG Local Search. Master's thesis, University of Applied Sciences Technikum Wien, 2026.",
+  "documents": [
+    {
+      "filename": "classical-rag-workflow.pdf",
+      "title": "Classical RAG workflow",
+      "baseline": "C0",
+      "group": "classical",
+      "references": [
+        "17",
+        "21",
+        "38"
+      ],
+      "pages": [
+        {
+          "title": "From a page to the vector index",
+          "part": "Index construction",
+          "assets": [
+            "index.svg"
+          ],
+          "intro": [
+            "C0 uses complete non-empty pages as chunks, with whitespace normalisation and no overlap. Azure OpenAI supplies text-embedding-3-small embeddings [17].",
+            "The figures use a fictional planetarium guideline. Passages, IDs, model responses, scores, counts and grades are illustrative, not measured study results. N denotes the number of indexed chunks."
+          ],
+          "figure": 18,
+          "caption": "Ordered IDs bind matrix rows to full chunk texts and document-page mappings. Each vector has 1,536 dimensions and is normalised to unit length.",
+          "thesis": "Section 2.5; Appendix H"
+        },
+        {
+          "title": "Match the question to every chunk",
+          "part": "Retrieval",
+          "assets": [
+            "cosine-matching.svg"
+          ],
+          "intro": [
+            "The query uses the same Azure embedding model as the index [17]. After L2 normalisation, the exact dot product equals cosine similarity [38, Section 6.3]."
+          ],
+          "figure": 19,
+          "caption": "All stored vectors are compared with the query. The two-dimensional angle view is schematic; matching uses all 1,536 dimensions. Scores are constructed.",
+          "thesis": "Section 2.5; Appendix I"
+        },
+        {
+          "title": "Rank and select five full chunks",
+          "part": "Retrieval",
+          "assets": [
+            "top-five.svg"
+          ],
+          "intro": [
+            "Rank every chunk by decreasing cosine similarity. Exact score ties retain the stored index order."
+          ],
+          "figure": 20,
+          "caption": "The table shows six constructed positions within the complete search pool. The first five full texts feed answer generation in this order. Retrieval evaluation uses the same five positions. Displayed excerpts are shortened.",
+          "thesis": "Section 2.5; Appendix I"
+        },
+        {
+          "title": "Generate an answer and trace its citation",
+          "part": "Generation",
+          "assets": [
+            "answer-generation.svg"
+          ],
+          "intro": [
+            "Azure OpenAI generates the answer from the question and five complete chunks. The prompt requires the predefined abstention response when evidence is insufficient."
+          ],
+          "figure": 21,
+          "caption": "The German answer and Quellen marker illustrate the native C0 answer contract. Context excerpts are shortened only for display. A citation locates a source page; it does not establish factual support.",
+          "thesis": "Section 2.5; Appendix I"
+        },
+        {
+          "title": "Evaluate the retrieved ranking",
+          "part": "Evaluation",
+          "assets": [
+            "retrieval-evaluation.svg"
+          ],
+          "intro": [
+            "Use the retained document-page mappings to attach shared qrel grades. Qrels evaluate the retrieval order; they do not determine it."
+          ],
+          "figure": 22,
+          "caption": "All five positions are evaluated, independently of answer citations. The judged pool contains six pages; F / 1 has grade 1. Linear gains give nDCG@5 = 0.866 [21]. The minimal evidence set {A / 1} is covered, so Evidence Recall@5 = 1.",
+          "thesis": "Sections 2.4, 2.6 and 2.7; Appendix I"
+        }
+      ]
+    },
+    {
+      "filename": "graphrag-workflow.pdf",
+      "title": "GraphRAG Local Search workflow",
+      "baseline": "G0",
+      "group": "graphrag",
+      "references": [
+        "4",
+        "17",
+        "21",
+        "35",
+        "36",
+        "37",
+        "38"
+      ],
+      "pages": [
+        {
+          "title": "Extract records from a source text unit",
+          "part": "Index construction",
+          "assets": [
+            "text-unit-origin.svg",
+            "source-text.svg",
+            "extraction-request.svg",
+            "extraction-response.svg"
+          ],
+          "intro": [
+            "G0 uses page-based text units without overlap and retains their document-page mapping. Azure OpenAI receives the source text and native GraphRAG 3.1.0 extraction prompt [4, 35]."
+          ],
+          "figure": 7,
+          "caption": "The fictional planetarium passage and structured model response are illustrative. Extraction uses the default entity types PERSON, ORGANIZATION, GEO and EVENT. The prompt panel summarises the native template.",
+          "thesis": "Section 2.5; Appendix F"
+        },
+        {
+          "title": "Parse and consolidate extracted records",
+          "part": "Index construction",
+          "assets": [
+            "parse-record.svg",
+            "consolidate-records.svg"
+          ],
+          "intro": [
+            "GraphRAG parses the response and attaches its input text-unit ID. Entity records group by name and type; relationships group by source and target names [35]."
+          ],
+          "figure": 8,
+          "caption": "Identical descriptions are removed. A sole remaining description stays unchanged; differing descriptions are combined by the Azure LLM. Provenance links survive consolidation. Parsing and grouping do not verify correctness or semantic identity.",
+          "thesis": "Section 2.5; Appendix F"
+        },
+        {
+          "title": "Connect entities through relationships",
+          "part": "Index construction",
+          "assets": [
+            "entity-records.svg",
+            "relationship-graph.svg"
+          ],
+          "intro": [
+            "Relationships name their two entities. Reusing the GUIDE node joins the example records into a connected graph [4, 35]."
+          ],
+          "figure": 9,
+          "caption": "Edges are undirected and node positions illustrative. Descriptions and links to original text units remain attached to entity and relationship records.",
+          "thesis": "Section 2.5; Appendix F"
+        },
+        {
+          "title": "Detect communities and generate reports",
+          "part": "Index construction",
+          "assets": [
+            "communities.svg",
+            "community-report.svg"
+          ],
+          "intro": [
+            "Hierarchical Leiden groups nodes by graph connections and relationship weights; G0 applies it to the largest connected component [36]. Azure OpenAI summarises each community [35]."
+          ],
+          "figure": 10,
+          "caption": "Only one hierarchy level is shown. C1 and its report excerpt are constructed. Membership links connect the report to its entities; reports contain derived information rather than original source text.",
+          "thesis": "Section 2.5; Appendix F"
+        },
+        {
+          "title": "Embed entities and retain linked outputs",
+          "part": "Index construction",
+          "assets": [
+            "entity-embeddings.svg",
+            "index-outputs.svg"
+          ],
+          "intro": [
+            "Azure OpenAI embeds each entity title and description with text-embedding-3-small. LanceDB stores the 1,536-dimensional vector with its entity ID [17, 35]."
+          ],
+          "figure": 11,
+          "caption": "G0 also embeds text units and community reports. Native Local Search starts with entity-vector matching. Symbolic vectors and record IDs are illustrative. Indexing finishes before a question arrives.",
+          "thesis": "Section 2.5; Appendix F"
+        },
+        {
+          "title": "Find matching entities for the question",
+          "part": "Local Search",
+          "assets": [
+            "entity-matching.svg"
+          ],
+          "intro": [
+            "Embed the question with the same Azure model used during indexing. LanceDB returns entity matches in increasing L2 (Euclidean) distance [35, 37]."
+          ],
+          "figure": 12,
+          "caption": "The diamond marks the query; circles mark entity vectors. The spatial view is schematic and matching uses all 1,536 dimensions. GUIDE is one illustrative match, not the complete result list.",
+          "thesis": "Section 2.5; Appendix G"
+        },
+        {
+          "title": "Build the native mixed answer context",
+          "part": "Local Search",
+          "assets": [
+            "matched-entities.svg",
+            "linked-candidates.svg",
+            "mixed-context.svg"
+          ],
+          "intro": [
+            "Stored links connect matched entities to graph records, community reports and original text units. A token budget limits the selected native context [35]."
+          ],
+          "figure": 13,
+          "caption": "Sources contain original text. Entities, Relationships and Reports contain derived records. Linked candidates may be omitted to fit the budget. No evaluation projection replaces or truncates this generation context.",
+          "thesis": "Section 2.5; Appendix G"
+        },
+        {
+          "title": "Generate an answer with record references",
+          "part": "Generation",
+          "assets": [
+            "answer-generation.svg"
+          ],
+          "intro": [
+            "Azure OpenAI receives the original question, selected context tables and native Local Search instructions [35]. The prompt panel summarises the native template."
+          ],
+          "figure": 14,
+          "caption": "The constructed answer cites Sources record 1. A Sources ID identifies an original text-unit record; entity, relationship and report IDs identify derived records. Record IDs are not document page numbers.",
+          "thesis": "Section 2.5; Appendix G"
+        },
+        {
+          "title": "Trace a Sources record to its page",
+          "part": "Provenance",
+          "assets": [
+            "source-provenance.svg"
+          ],
+          "intro": [
+            "Project provenance links connect a Sources record to its input text unit and the original document page."
+          ],
+          "figure": 15,
+          "caption": "Resolving [Data: Sources (1)] locates the original page. Whether that page supports the answer is checked separately. All displayed passage text is fictional.",
+          "thesis": "Sections 2.4 and 2.5; Appendix G"
+        },
+        {
+          "title": "Establish the order of Sources",
+          "part": "Local Search detail",
+          "assets": [
+            "source-order.svg"
+          ],
+          "intro": [
+            "Detail of Figure 13: GraphRAG assigns each text unit to its first matched entity and includes it once. It computes no separate text-unit vector score [35]."
+          ],
+          "figure": 16,
+          "caption": "Sort by ascending entity search rank, then descending relationship count for that entity and unit. Equal counts retain stored text-unit order. Append units until the next would exceed the budget. All six fit in this constructed example.",
+          "thesis": "Section 2.5; Appendix G"
+        },
+        {
+          "title": "Evaluate the first five Sources",
+          "part": "Evaluation",
+          "assets": [
+            "retrieval-evaluation.svg"
+          ],
+          "intro": [
+            "Evaluate Sources positions 1-5 in the order established in Figure 16. Map them to shared source-page qrels without changing the native generation context."
+          ],
+          "figure": 17,
+          "caption": "The judged example pool contains all six pages. Linear gains give nDCG@5 = 0.870 [21]. {A / 1} covers the required facts, so Evidence Recall@5 = 1. G0 generates from all six Sources plus the other context tables; the Top-5 cutoff applies only to ranking evaluation [38]. C0 generation uses five chunks.",
+          "thesis": "Sections 2.4, 2.6 and 2.7; Appendix G"
+        }
+      ]
+    }
+  ]
+}

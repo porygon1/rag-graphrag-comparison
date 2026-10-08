@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="21mm" viewBox="0 0 160 21" role="img" aria-labelledby="title desc">
+<title id="title">A source page becomes a linked text unit</title><desc id="desc">Project input preparation uses the text of page 1 of illustrative Guideline A. The source association is retained for text unit t1.</desc>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.paper{fill:white;stroke:#555;stroke-width:.25}</style>
+<g id="source-page"><path class="paper" d="M2 1H47L52 6V19H2Z"/><path class="paper" d="M47 1V6H52"/><text x="7" y="8" class="bold">Guideline A</text><text x="7" y="14.3">Page 1</text></g>
+<text x="79" y="6" text-anchor="middle" class="small">The project retains</text><path class="process" d="M52 10H105.8"/><text x="79" y="17" text-anchor="middle" class="small">the source mapping.</text>
+<g id="text-unit"><path class="paper" d="M106 1H153L158 6V19H106Z"/><path class="paper" d="M153 1V6H158"/><text x="111" y="8" class="bold">Text unit t1</text><text x="111" y="14.3">Source: A / 1</text></g>
+</svg>

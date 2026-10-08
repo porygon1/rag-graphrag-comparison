@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="68mm" viewBox="0 0 160 68" role="img">
+<title>Four kinds of candidate information linked to the matched entities</title>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.italic{font-style:italic}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.edge{fill:none;stroke:#333;stroke-width:.3}.node{fill:white;stroke:#444;stroke-width:.27}.paper{fill:white;stroke:#777;stroke-width:.25}.module{fill:#f4f4f4;stroke:#555;stroke-width:.27}.distance{fill:none;stroke:#666;stroke-width:.25;stroke-dasharray:1.2 1.1}</style>
+<g transform="translate(0 -10)">
+<rect x="2" y="11" width="74" height="29" rx="1" class="paper"/>
+<text x="7" y="18" class="bold" text-anchor="start">Entities</text>
+<path d="M7 21H71" class="rule"/>
+<text x="7" y="27" class="small" text-anchor="start">GUIDE (e1)</text>
+<text x="7" y="35" class="small" text-anchor="start">GUIDE books and welcomes guests.</text>
+<rect x="84" y="11" width="74" height="29" rx="1" class="paper"/>
+<text x="89" y="18" class="bold" text-anchor="start">Relationships</text>
+<path d="M89 21H153" class="rule"/>
+<text x="89" y="27" class="small" text-anchor="start">GUEST is booked</text>
+<text x="89" y="35" class="small" text-anchor="start">and welcomed by GUIDE.</text>
+<rect x="2" y="46" width="74" height="29" rx="1" class="paper"/>
+<text x="7" y="53" class="bold" text-anchor="start">Reports</text>
+<path d="M7 56H71" class="rule"/>
+<text x="7" y="62" class="small" text-anchor="start">C1: Guides book and</text>
+<text x="7" y="70" class="small" text-anchor="start">welcome guests.</text>
+<path d="M84 46H154L158 50V75H84Z M154 46V50H158" class="paper"/>
+<text x="89" y="53" class="bold" text-anchor="start">Sources</text>
+<path d="M89 56H153" class="rule"/>
+<text x="89" y="62" class="small" text-anchor="start">t1: The guide books each guest</text>
+<text x="89" y="70" class="small" text-anchor="start">before the planetarium visit.</text>
+</g>
+</svg>

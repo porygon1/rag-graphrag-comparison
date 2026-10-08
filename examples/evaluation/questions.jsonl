@@ -1,0 +1,28 @@
+{"question_id": "EXAMPLE-Q-001", "cohort": "A", "review_triggers": ["numeric_tolerance", "exception_sensitive", "multi_evidence_and_semantics_assumed"], "diagnostic_tags": ["multi_evidence_and_semantics_assumed"]}
+{"question_id": "EXAMPLE-Q-002", "cohort": "A", "review_triggers": [], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-003", "cohort": "A", "review_triggers": [], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-004", "cohort": "A", "review_triggers": ["multi_evidence_and_semantics_assumed"], "diagnostic_tags": ["multi_evidence_and_semantics_assumed"]}
+{"question_id": "EXAMPLE-Q-005", "cohort": "A", "review_triggers": ["numeric_tolerance"], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-006", "cohort": "A", "review_triggers": ["exception_sensitive"], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-007", "cohort": "A", "review_triggers": ["multi_evidence_and_semantics_assumed"], "diagnostic_tags": ["multi_evidence_and_semantics_assumed"]}
+{"question_id": "EXAMPLE-Q-008", "cohort": "A", "review_triggers": [], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-009", "cohort": "A", "review_triggers": ["numeric_tolerance"], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-010", "cohort": "A", "review_triggers": ["multi_evidence_and_semantics_assumed"], "diagnostic_tags": ["multi_evidence_and_semantics_assumed"]}
+{"question_id": "EXAMPLE-Q-011", "cohort": "A", "review_triggers": ["exception_sensitive"], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-012", "cohort": "A", "review_triggers": [], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-013", "cohort": "A", "review_triggers": ["numeric_tolerance", "multi_evidence_and_semantics_assumed"], "diagnostic_tags": ["multi_evidence_and_semantics_assumed"]}
+{"question_id": "EXAMPLE-Q-014", "cohort": "A", "review_triggers": [], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-015", "cohort": "A", "review_triggers": [], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-016", "cohort": "A", "review_triggers": ["exception_sensitive", "multi_evidence_and_semantics_assumed"], "diagnostic_tags": ["multi_evidence_and_semantics_assumed"]}
+{"question_id": "EXAMPLE-Q-017", "cohort": "A", "review_triggers": ["numeric_tolerance"], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-018", "cohort": "A", "review_triggers": [], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-019", "cohort": "A", "review_triggers": ["multi_evidence_and_semantics_assumed"], "diagnostic_tags": ["multi_evidence_and_semantics_assumed"]}
+{"question_id": "EXAMPLE-Q-020", "cohort": "A", "review_triggers": [], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-021", "cohort": "A", "review_triggers": ["numeric_tolerance", "exception_sensitive"], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-022", "cohort": "A", "review_triggers": ["multi_evidence_and_semantics_assumed"], "diagnostic_tags": ["multi_evidence_and_semantics_assumed"]}
+{"question_id": "EXAMPLE-Q-023", "cohort": "A", "review_triggers": [], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-024", "cohort": "A", "review_triggers": [], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-025", "cohort": "U", "review_triggers": ["numeric_tolerance", "multi_evidence_and_semantics_assumed"], "diagnostic_tags": ["multi_evidence_and_semantics_assumed"]}
+{"question_id": "EXAMPLE-Q-026", "cohort": "U", "review_triggers": ["exception_sensitive"], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-027", "cohort": "U", "review_triggers": [], "diagnostic_tags": []}
+{"question_id": "EXAMPLE-Q-028", "cohort": "U", "review_triggers": ["multi_evidence_and_semantics_assumed"], "diagnostic_tags": ["multi_evidence_and_semantics_assumed"]}

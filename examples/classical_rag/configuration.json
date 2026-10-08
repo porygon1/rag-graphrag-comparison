@@ -1,0 +1,15 @@
+{
+  "embedding_model": "text-embedding-3-small",
+  "dimension": 1536,
+  "top_k": 5,
+  "generation_model": "gpt-4.1-mini",
+  "generation_decoding": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 1024,
+    "seed": 42
+  },
+  "system_prompt": "Du bist ein interner Assistent für Unternehmensrichtlinien.\nBeantworte die Frage ausschließlich anhand des bereitgestellten Kontexts auf Deutsch, knapp und\npräzise. Belege jede sachliche Aussage mit der passenden Quellenmarke [n]. Schließe eine\ninhaltliche Antwort mit einer Zeile `Quellen:`, die nur die tatsächlich verwendeten Marken nennt.\nWenn der Kontext keine hinreichende Antwort trägt, gib ausschließlich folgenden Satz aus, ohne\nQuellenzeile oder weiteren Text: Diese Frage lässt sich mit den vorliegenden Richtlinien nicht beantworten.",
+  "user_template": "Kontext:\n{context}\n\nFrage:\n{question}",
+  "azure_binding_sha256": "ebe57e6cee4110fb55f5ac74a6834754c7d6000a4499fad298407e297ff66288"
+}

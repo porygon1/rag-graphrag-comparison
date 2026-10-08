@@ -1,0 +1,48 @@
+{
+  "schema_version": "classical-rag-artifacts-v1",
+  "artifact_kind": "azure_run",
+  "status": "completed",
+  "system_id": "CLASSICAL-RAG",
+  "condition_id": "C0",
+  "run_id": "rfc2795-azure-example",
+  "configuration_sha256": "9cd2a99d5f951bcb46321a30779fd363bfb447516e63348f9cf602f3357a192c",
+  "question_set_version": "DEMO-RFC2795-Q1",
+  "artifacts": {
+    "chunks": {
+      "path": "chunks.jsonl",
+      "sha256": "e00b7daaaa32c344b7f1aa8ef9086d6d484301050d53d370d92cad9e30e9173f"
+    },
+    "chunk_origins": {
+      "path": "chunk_origins.jsonl",
+      "sha256": "c5efec73a3e086a1f821383b558c33bbcbd69b0318371bb4495cc0738bb71be9"
+    },
+    "questions": {
+      "path": "questions.jsonl",
+      "sha256": "6aaf3799215ee39c724c4e2f33a070f241b66967ad48dc92a10c8e8b0cdd0216"
+    },
+    "query_embeddings": {
+      "path": "query_embeddings.jsonl",
+      "sha256": "06512d92149d13459e56d4589c1405677fb11cc9b09665831a02891d5b79e627"
+    },
+    "retrieval": {
+      "path": "retrieval.jsonl",
+      "sha256": "eb905864dbce9dea06c6f6094b3ff801775453a78b3e48bb4dfd950607153589"
+    },
+    "answers": {
+      "path": "answers.jsonl",
+      "sha256": "776a037c1e27b232c09ea42e1a8e65e8cefce80c32d29efd5214a936aade0b96"
+    },
+    "configuration": {
+      "path": "configuration.json",
+      "sha256": "9cd2a99d5f951bcb46321a30779fd363bfb447516e63348f9cf602f3357a192c"
+    },
+    "index_matrix": {
+      "path": "index/embedding_matrix.npy",
+      "sha256": "745f430ce66101dc85816626d1f4f92c010485a9bbfad482bfce9a132322557a"
+    },
+    "index_sidecar": {
+      "path": "index/index_sidecar.json",
+      "sha256": "a8ff1578a65e614ac547a0d85e5f81ae46259ec4172d2e5b2e2ca8004c6e8bf3"
+    }
+  }
+}

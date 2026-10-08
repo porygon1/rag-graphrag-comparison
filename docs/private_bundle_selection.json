@@ -1,0 +1,713 @@
+{
+  "manifest_fields": {
+    "schema_version": true,
+    "metadata": {
+      "dataset_kind": true,
+      "scopes": true,
+      "evaluation_ids": true,
+      "review_revision_ids": true,
+      "acceptance_ids": true,
+      "conditions_by_scope": true,
+      "main_conditions_by_scope": true,
+      "supplemental_conditions": true,
+      "graph_review_reference_conditions_by_scope": true,
+      "graph_audit_reuse": true,
+      "graph_sampling_ids_by_condition": true,
+      "technical_diagnostic_conditions": true,
+      "source_population": true,
+      "reported_case_question_ids": true
+    }
+  },
+  "roles": {
+    "questions": {
+      "fields": {
+        "question_id": true,
+        "cohort": true,
+        "review_triggers": true
+      }
+    },
+    "references": {
+      "fields": {
+        "scope": true,
+        "question_id": true,
+        "qrels": true,
+        "minimal_evidence_sets": true,
+        "question_units": true
+      }
+    },
+    "retrieval": {
+      "fields": {
+        "scope": true,
+        "condition_id": true,
+        "question_id": true,
+        "ranked_units": true
+      }
+    },
+    "outcomes": {
+      "fields": {
+        "scope": true,
+        "condition_id": true,
+        "question_id": true,
+        "metric": true,
+        "value": true,
+        "status": true
+      }
+    },
+    "answer_reviews": {
+      "fields": {
+        "scope": true,
+        "case_id": true,
+        "question_id": true,
+        "condition_id": true,
+        "cohort": true,
+        "assessment_state": true,
+        "review_status": true,
+        "technical_status": true,
+        "grades": {
+          "decision_label": true,
+          "answer_correctness": true,
+          "faithfulness": true,
+          "citation_correctness": true
+        }
+      }
+    },
+    "graph_reviews": {
+      "fields": {
+        "scope": true,
+        "condition_id": true,
+        "artifact_type": true,
+        "audit_item_id": true,
+        "status": true,
+        "support_status": true,
+        "provenance_status": true,
+        "contradiction_flag": true,
+        "ambiguity_flag": true
+      }
+    },
+    "graph_inventory": {
+      "fields": {
+        "condition_id": true,
+        "artifact_type": true,
+        "graph_source_condition": true,
+        "row_count": true,
+        "unique_id_count": true,
+        "median_character_length": true,
+        "character_length_field": true,
+        "includes_whitespace": true,
+        "raw_entity_type_count": true,
+        "configured_entity_types": true,
+        "community_level_counts": true
+      }
+    },
+    "graph_population": {
+      "fields": {
+        "condition_id": true,
+        "artifact_type": true,
+        "stable_id": true,
+        "stratum": true
+      }
+    },
+    "graph_strata": {
+      "fields": {
+        "condition_id": true,
+        "artifact_type": true,
+        "stratum_sizes": true
+      }
+    },
+    "errors": {
+      "fields": {
+        "scope": true,
+        "condition_id": true,
+        "dimension": true,
+        "question_id": true,
+        "case_id": true,
+        "cohort": true,
+        "status": true,
+        "codes": true
+      }
+    },
+    "gu_reviews": {
+      "fields": {
+        "question_id": true,
+        "condition_id": true,
+        "category": true,
+        "review_status": true,
+        "answerability": true,
+        "evaluation_suitability": true
+      }
+    },
+    "graph_measures": {
+      "fields": {
+        "condition_id": true,
+        "artifact_type": true,
+        "id": true,
+        "human_readable_id": true,
+        "type": true,
+        "community": true,
+        "level": true,
+        "character_length": true
+      }
+    },
+    "corpus_records": {
+      "fields": {
+        "document_id": true,
+        "page_number": true,
+        "text_layer_status": true,
+        "extraction_status": true,
+        "blocker": true,
+        "usable_text": true,
+        "baseline_chunk_id": true
+      }
+    },
+    "corpus_inventory": {
+      "fields": {
+        "attempted_document_count": true,
+        "processed_document_count": true,
+        "failed_document_count": true,
+        "page_count": true,
+        "text_layer_counts": true,
+        "extraction_status_counts": true,
+        "blocker_counts": true,
+        "chunk_count": true,
+        "chunk_origin_count": true,
+        "input_record_count": true,
+        "input_text_record_count": true,
+        "input_blocked_record_count": true,
+        "projection_status_counts": true
+      }
+    },
+    "source_pages": {
+      "fields": {
+        "chunk_id": true,
+        "corpus_snapshot_id": true,
+        "document_id": true,
+        "page_number": true,
+        "text": true
+      }
+    },
+    "raw_pages": {
+      "fields": {
+        "document_id": true,
+        "page_number": true,
+        "text": true
+      }
+    },
+    "source_origins": {
+      "fields": {
+        "chunk_id": true,
+        "document_id": true,
+        "corpus_snapshot_id": true,
+        "origin_evidence_unit_ids": true,
+        "projection_status": true
+      }
+    },
+    "segments": {
+      "fields": {
+        "segment_id": true,
+        "source_page_chunk_id": true,
+        "character_start": true,
+        "character_end": true,
+        "token_count": true
+      }
+    },
+    "question_content": {
+      "fields": {
+        "question_id": true,
+        "question_text": true,
+        "reference_package": {
+          "canonical_answer_summary": true,
+          "required_facts": true,
+          "acceptable_variants": true,
+          "prohibited_facts": true,
+          "numeric_tolerance": {
+            "type": true,
+            "unit": true,
+            "reference_value": true,
+            "allowed_deviation": true,
+            "rule_safe": true
+          },
+          "minimal_evidence_sets": true,
+          "abstention_expected": true,
+          "abstention_reason": true
+        }
+      }
+    },
+    "gu_question_content": {
+      "fields": {
+        "question_id": true,
+        "question_text": true,
+        "answerability": true,
+        "evaluation_suitability": true,
+        "limitations": true,
+        "ambiguity_notes": true,
+        "reference_package": {
+          "canonical_answer_summary": true,
+          "required_facts": true,
+          "acceptable_variants": true,
+          "prohibited_facts": true,
+          "numeric_tolerance": {
+            "type": true,
+            "unit": true,
+            "reference_value": true,
+            "allowed_deviation": true,
+            "rule_safe": true
+          },
+          "minimal_evidence_sets": true,
+          "abstention_expected": true,
+          "abstention_reason": true
+        }
+      }
+    },
+    "native_answers": {
+      "fields": {
+        "population": true,
+        "condition_id": true,
+        "question_id": true,
+        "technical_status": true,
+        "answer_text": true
+      }
+    },
+    "native_contexts": {
+      "fields": {
+        "population": true,
+        "condition_id": true,
+        "question_id": true,
+        "context_text": true,
+        "carriers": {
+          "reports": true,
+          "relationships": true,
+          "claims": true,
+          "entities": true,
+          "sources": true
+        }
+      }
+    },
+    "native_retrieval": {
+      "fields": {
+        "population": true,
+        "condition_id": true,
+        "question_id": true,
+        "hits": {
+          "rank": true,
+          "score": true,
+          "evidence_unit_id": true,
+          "chunk_id": true,
+          "item_id": true,
+          "source_page_chunk_id": true,
+          "character_start": true,
+          "character_end": true
+        },
+        "sources": {
+          "rank": true,
+          "carrier_local_id": true,
+          "source_evidence_unit_id": true,
+          "projection_status": true,
+          "projection_failure_reason": true,
+          "direct_evidence_credit_allowed": true
+        }
+      }
+    },
+    "condition_configurations": {
+      "fields": {
+        "condition_id": true,
+        "system": true,
+        "chunking_policy": true,
+        "embedding_model": true,
+        "entity_types": true,
+        "graph_source": true,
+        "embedding_dimension": true,
+        "top_k": true,
+        "generation_model": true,
+        "generation_decoding": true,
+        "graphrag_version": true,
+        "community_level": true,
+        "response_type": true
+      }
+    },
+    "thesis_metric_examples": {
+      "fields": {
+        "case_id": true,
+        "thesis_ref": true,
+        "ranked_units": true,
+        "qrels": true,
+        "minimal_evidence_sets": true
+      }
+    },
+    "bundle_readme": {
+      "copy": true
+    }
+  },
+  "result_roles": {
+    "reported_analysis": {
+      "fields": {
+        "dataset_kind": true,
+        "input_manifest_sha256": true,
+        "contrasts": {
+          "scope": true,
+          "reference": true,
+          "variant": true,
+          "metric": true,
+          "result": {
+            "N_total": true,
+            "N_app": true,
+            "k": true,
+            "missing": true,
+            "coverage": true,
+            "missing_reasons": {
+              "incomplete_required_states": true
+            },
+            "claim_coverage_complete": true,
+            "scale": true,
+            "not_applicable_question_ids": true,
+            "missing_states_by_question": true,
+            "paired_question_ids": true,
+            "question_changes": true,
+            "change_counts": {
+              "positive": true,
+              "zero": true,
+              "negative": true
+            },
+            "aggregation_status": true,
+            "standard": {
+              "estimate": true
+            },
+            "k_s": true
+          }
+        },
+        "gap_shifts": {
+          "scope": true,
+          "c_variant": true,
+          "g_variant": true,
+          "metric": true,
+          "result": {
+            "N_total": true,
+            "N_app": true,
+            "k": true,
+            "missing": true,
+            "coverage": true,
+            "missing_reasons": {
+              "incomplete_required_states": true
+            },
+            "claim_coverage_complete": true,
+            "scale": true,
+            "not_applicable_question_ids": true,
+            "missing_states_by_question": true,
+            "paired_question_ids": true,
+            "question_changes": true,
+            "change_counts": {
+              "positive": true,
+              "zero": true,
+              "negative": true
+            },
+            "aggregation_status": true,
+            "standard": {
+              "estimate": true
+            },
+            "k_gap": true
+          }
+        },
+        "claim_status": true
+      }
+    },
+    "reported_tables": {
+      "fields": {
+        "dataset_kind": true,
+        "input_manifest_sha256": true,
+        "review_revision_ids": {
+          "PRIMARY": true,
+          "FINAL": true,
+          "GU": true
+        },
+        "tables": {
+          "Table 5: experimental basis": {
+            "Component": true,
+            "Count": true
+          },
+          "Table 6: evaluated configurations": {
+            "Condition": true,
+            "System": true,
+            "Segmentation": true,
+            "Embedding": true,
+            "Dimensions": true,
+            "Entity types": true,
+            "Questions": true,
+            "Stored response records": true,
+            "Nonempty responses": true
+          },
+          "Table 7: baseline comparison": {
+            "Measure": true,
+            "N_total": true,
+            "N_app": true,
+            "Paired k": true,
+            "C0 applicable valid k": true,
+            "C0": true,
+            "G0 applicable valid k": true,
+            "G0": true,
+            "C0 higher / equal / G0 higher": true,
+            "G0 minus C0": true
+          },
+          "Table 7: response behaviour": {
+            "Condition": true,
+            "A substantive": true,
+            "A abstentions": true,
+            "U appropriate abstentions": true,
+            "U content with insufficiency caveat": true
+          },
+          "Table 8: evidence and correctness": {
+            "Condition": true,
+            "Evidence Recall@5": true,
+            "Grades 0 / 1 / 2 / 3": true,
+            "Total": true,
+            "Common k": true,
+            "Common retrieval k": true
+          },
+          "Baseline source coverage": {
+            "Condition": true,
+            "Expected A positions": true,
+            "Available A positions": true
+          },
+          "Table 9: native inventory and selected audit": {
+            "Artefact": true,
+            "Native rows": true,
+            "Distinct IDs": true,
+            "Audited cases": true,
+            "Support: supported / partial / unsupported / NA": true,
+            "Support k": true,
+            "Resolved provenance": true,
+            "Provenance N": true,
+            "Median characters": true,
+            "Community levels": true
+          },
+          "Question-property diagnostics": {
+            "Property": true,
+            "A group N": true,
+            "Retrieval pair k": true,
+            "G0 minus C0 nDCG": true,
+            "C0 complete evidence": true,
+            "G0 complete evidence": true,
+            "Correctness pair k": true,
+            "C0 higher / equal / G0 higher": true
+          },
+          "Table 10: error families": {
+            "Family": true,
+            "Condition": true,
+            "Errors": true,
+            "N_total": true,
+            "N_app": true,
+            "Valid k": true,
+            "Unresolved": true,
+            "Missing": true
+          },
+          "Reported material error codes": {
+            "Condition": true,
+            "Code": true,
+            "Cases": true,
+            "Valid k": true
+          },
+          "C0 technical-contract diagnostics on U": {
+            "U cases": true,
+            "Recorded invalid-output cases": true
+          },
+          "Table 11: retrieval changes and behaviour": {
+            "Variant": true,
+            "Reference": true,
+            "Retrieval pair k": true,
+            "Delta nDCG": true,
+            "Delta Evidence Recall (pp)": true,
+            "Reference complete evidence": true,
+            "Variant complete evidence": true,
+            "A answers": true,
+            "A abstentions": true,
+            "U appropriate abstentions": true
+          },
+          "Table 12: paired quality changes": {
+            "Variant": true,
+            "Measure": true,
+            "Wins": true,
+            "Ties": true,
+            "Losses": true,
+            "Dominance": true,
+            "N_total": true,
+            "N_app": true,
+            "Paired k": true
+          },
+          "Table 13: architecture-gap shifts": {
+            "Intervention": true,
+            "Measure": true,
+            "Four-state k": true,
+            "Gap shift": true,
+            "Unit": true
+          },
+          "Table 14: FINAL retrieval and behaviour": {
+            "Condition": true,
+            "Own retrieval k": true,
+            "nDCG": true,
+            "Complete evidence": true,
+            "A answers": true,
+            "A abstentions": true,
+            "U appropriate abstentions": true
+          },
+          "Table 15: FINAL quality comparisons": {
+            "Comparison": true,
+            "Measure": true,
+            "Wins": true,
+            "Ties": true,
+            "Losses": true,
+            "Dominance": true,
+            "N_app": true,
+            "Paired k": true
+          },
+          "FINAL paired retrieval contrasts": {
+            "Comparison": true,
+            "Pair k": true,
+            "Reference mean": true,
+            "First mean": true,
+            "Delta nDCG": true,
+            "Higher / equal / lower": true,
+            "Reference evidence successes": true,
+            "First evidence successes": true,
+            "Delta Evidence Recall (pp)": true
+          },
+          "Appendix E: grade distributions": {
+            "Condition": true,
+            "Measure": true,
+            "Applicable valid k": true,
+            "Grades 0 / 1 / 2 / 3": true
+          },
+          "Table 16: genuine user categories": {
+            "Condition": true,
+            "N_total": true,
+            "Reviewed k": true,
+            "Missing reviews": true,
+            "correct": true,
+            "partially_correct": true,
+            "incorrect": true,
+            "appropriate_abstention": true,
+            "inappropriate_abstention": true,
+            "technical_failure": true
+          },
+          "GU category transitions": {
+            "Comparison": true,
+            "Common k": true,
+            "Changed category": true,
+            "Into correct": true,
+            "Out of correct": true,
+            "Into incorrect": true,
+            "Out of incorrect": true
+          },
+          "GU correct-set overlap": {
+            "Comparison": true,
+            "Both correct": true,
+            "G correct also C correct": true,
+            "G partial while C incorrect or appropriately abstains": true
+          },
+          "GU reference boundaries": {
+            "Boundary": true,
+            "Questions": true
+          },
+          "Appendix metric calculations": {
+            "Thesis reference": true,
+            "DCG": true,
+            "IDCG": true,
+            "nDCG": true,
+            "Evidence Recall@5": true,
+            "Validity": true
+          },
+          "Selected segmentation case": {
+            "Measure": true,
+            "C0": true,
+            "CHUNK": true
+          },
+          "Selected source binding": {
+            "Same first source page": true,
+            "Rank": true,
+            "Segment start": true,
+            "Segment end": true
+          }
+        },
+        "claim_status": true
+      }
+    },
+    "figure_data": {
+      "fields": {
+        "dataset_kind": true,
+        "input_manifest_sha256": true,
+        "figures": {
+          "Figure 2": {
+            "scope": true,
+            "direction": true,
+            "paired_k": true,
+            "question_differences": true,
+            "mean_difference": true,
+            "negative_equal_positive": true
+          },
+          "Figure 3": {
+            "scope": true,
+            "direction": true,
+            "effects": {
+              "condition_id": true,
+              "reference": true,
+              "paired_k": true,
+              "mean_difference": true,
+              "applicable_n": true
+            }
+          },
+          "Figure 4": {
+            "scope": true,
+            "direction": true,
+            "balances": {
+              "condition_id": true,
+              "paired_k": true,
+              "wins": true,
+              "ties": true,
+              "losses": true,
+              "dominance": true,
+              "applicable_n": true
+            }
+          },
+          "Figure 5": {
+            "scope": true,
+            "grade_order": true,
+            "distributions": {
+              "Condition": true,
+              "Measure": true,
+              "Applicable valid k": true,
+              "Grades 0 / 1 / 2 / 3": true
+            }
+          },
+          "Figure 6": {
+            "scope": true,
+            "category_order": true,
+            "transitions": {
+              "condition_id": true,
+              "paired_k": true,
+              "wins": true,
+              "ties": true,
+              "losses": true,
+              "applicable_n": true
+            }
+          }
+        },
+        "claim_status": true
+      }
+    },
+    "figure_02": {
+      "copy": true
+    },
+    "figure_03": {
+      "copy": true
+    },
+    "figure_04": {
+      "copy": true
+    },
+    "figure_05": {
+      "copy": true
+    },
+    "figure_06": {
+      "copy": true
+    },
+    "reported_tables_markdown": {
+      "copy": true
+    }
+  }
+}

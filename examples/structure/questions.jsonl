@@ -1,0 +1,4 @@
+{"question_id": "DEMO-IMPS-Q-001", "canonical_question_id": "DEMO-IMPS-Q-001", "question_text": "Which numeric KEEPER request code stops all monkey business, which response codes may a SIMIAN use, and how can an attacker misuse that request?", "cohort": "primary_answerable"}
+{"question_id": "DEMO-IMPS-Q-002", "canonical_question_id": "DEMO-IMPS-Q-002", "question_text": "Which protocol does a ZOO use to send transcripts to a BARD?", "cohort": "primary_answerable"}
+{"question_id": "DEMO-IMPS-Q-003", "canonical_question_id": "DEMO-IMPS-Q-003", "question_text": "For PAN rejection code 0, who chooses the encryption scheme, and does PAN specify how a ZOO can identify it?", "cohort": "primary_answerable"}
+{"question_id": "DEMO-IMPS-Q-004", "canonical_question_id": "DEMO-IMPS-Q-004", "question_text": "What response timeout, in milliseconds, does CHIMP require for a SEND FOOD request?", "cohort": "robustness_abstention"}

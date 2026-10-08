@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="31mm" viewBox="0 0 160 31" role="img" aria-labelledby="title desc"><title id="title">Illustrative model response in the native record format</title><desc id="desc">Constructed example in the native delimited format. One entity record contains the title GUIDE, the type PERSON and a description. This is not recorded model output.</desc><defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs><style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.edge{fill:none;stroke:#333;stroke-width:.3}.node{fill:white;stroke:#444;stroke-width:.27}.relation{fill:white;stroke:#888;stroke-width:.2}</style>
+<g id="model-response">
+<text x="2" y="5" class="bold">Illustrative model output: one entity</text>
+<rect x="2" y="9" width="156" height="12" fill="#f3f3f3"/>
+<text x="6" y="16">("entity"&lt;|&gt;<tspan class="bold">GUIDE</tspan>&lt;|&gt;<tspan class="bold">PERSON</tspan>&lt;|&gt;Person who books guests.)</text>
+<text x="2" y="28" class="small">&lt;|&gt; separates fields. "entity" identifies the record kind.</text>
+</g>
+</svg>

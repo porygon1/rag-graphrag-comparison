@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="134mm" viewBox="0 0 160 134" role="img" aria-labelledby="title desc"><title id="title">Two relationship records share one GUIDE node</title><desc id="desc">GUEST and GUIDE are linked by the first described relationship. GUIDE and DESK are linked by the second. The same GUIDE endpoint becomes one shared graph node. Positions have no technical meaning. Edges are undirected.</desc><defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs><style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.edge{fill:none;stroke:#333;stroke-width:.3}.node{fill:white;stroke:#444;stroke-width:.27}.relation{fill:white;stroke:#888;stroke-width:.2}</style>
+<text x="2" y="5" class="bold">Relationship records</text>
+<g id="records"><path class="edge" d="M34 17.5H126M34 43.5H126"/>
+<rect class="node" x="2" y="12.5" width="32" height="10" rx="5"/><text x="18" y="19" text-anchor="middle" class="bold">GUEST</text>
+<rect class="node" x="126" y="12.5" width="32" height="10" rx="5"/><text x="142" y="19" text-anchor="middle" class="bold">GUIDE</text>
+<rect class="relation" x="45" y="9" width="70" height="17"/><text x="80" y="15.5" text-anchor="middle">is booked and welcomed by</text><text x="80" y="22" text-anchor="middle" class="small">Text units: t1, t4</text>
+<rect class="node" x="2" y="38.5" width="32" height="10" rx="5"/><text x="18" y="45" text-anchor="middle" class="bold">GUIDE</text>
+<rect class="node" x="126" y="38.5" width="32" height="10" rx="5"/><text x="142" y="45" text-anchor="middle" class="bold">DESK</text>
+<rect class="relation" x="44" y="35" width="72" height="17"/><text x="80" y="41.5" text-anchor="middle">submits guest bookings to</text><text x="80" y="48" text-anchor="middle" class="small">Text unit: t1</text></g>
+<path class="edge" d="M2 54C2 56 4 56 6 56H74C78 56 80 57 80 59C80 57 82 56 86 56H154C156 56 158 56 158 54"/>
+<path class="process" d="M80 59V79.8"/>
+<g id="shared-guide-transition">
+<text x="87" y="64.8">GraphRAG uses one <tspan class="bold">GUIDE</tspan> node</text>
+<text x="87" y="70.3">to join both relationships.</text>
+</g>
+<text x="2" y="82" class="bold">Result: connected graph</text>
+<g id="connected-graph"><path class="edge" d="M68.5 91L20 120M91.5 91L140 120"/>
+<rect class="node" x="63" y="80" width="34" height="11" rx="5.5"/><text x="80" y="87" text-anchor="middle" class="bold">GUIDE</text>
+<rect class="node" x="2" y="120" width="36" height="12" rx="6"/><text x="20" y="127.4" text-anchor="middle" class="bold">GUEST</text>
+<rect class="node" x="122" y="120" width="36" height="12" rx="6"/><text x="140" y="127.4" text-anchor="middle" class="bold">DESK</text>
+<rect class="relation" x="5" y="100" width="57" height="16"/><text x="33.5" y="106" text-anchor="middle">GUEST is booked</text><text x="33.5" y="112" text-anchor="middle">and welcomed by GUIDE</text>
+<rect class="relation" x="98" y="100" width="57" height="16"/><text x="126.5" y="106" text-anchor="middle">GUIDE submits guest</text><text x="126.5" y="112" text-anchor="middle">bookings to DESK</text></g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="67mm" viewBox="0 0 160 67" role="img">
+<title>Select context records within the budget using the GraphRAG context builder</title>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.italic{font-style:italic}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.edge{fill:none;stroke:#333;stroke-width:.3}.node{fill:white;stroke:#444;stroke-width:.27}.paper{fill:white;stroke:#777;stroke-width:.25}.module{fill:#f4f4f4;stroke:#555;stroke-width:.27}.distance{fill:none;stroke:#666;stroke-width:.25;stroke-dasharray:1.2 1.1}</style>
+<path d="M2 1C2 3 4 3 6 3H74C78 3 80 4 80 6C80 4 82 3 86 3H154C156 3 158 3 158 1" class="edge" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(0 6)">
+<path d="M80 0V8" class="process"/>
+<rect x="24" y="8" width="112" height="21" rx="2" class="module"/>
+<text x="80" y="16" class="bold" text-anchor="middle">Context builder (GraphRAG 3.1.0)</text>
+<text x="80" y="23" class="" text-anchor="middle">GraphRAG selects records that fit the context budget.</text>
+<path d="M80 29V38" class="process"/>
+<rect x="2" y="38" width="156" height="21" rx="1" class="paper"/>
+<text x="7" y="45" class="bold" text-anchor="start">Selected context tables</text>
+<path d="M7 48H153" class="rule"/>
+<text x="7" y="55" class="small" text-anchor="start">Entities</text>
+<text x="42" y="55" class="small" text-anchor="start">Relationships</text>
+<text x="93" y="55" class="small" text-anchor="start">Reports</text>
+<text x="128" y="55" class="small" text-anchor="start">Sources</text>
+</g>
+</svg>

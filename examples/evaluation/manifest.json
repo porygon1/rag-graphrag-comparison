@@ -1,0 +1,139 @@
+{
+  "schema_version": "evaluation-inputs-v1",
+  "metadata": {
+    "dataset_kind": "illustrative",
+    "scopes": [
+      "PRIMARY",
+      "FINAL"
+    ],
+    "conditions_by_scope": {
+      "PRIMARY": [
+        "C0",
+        "G0",
+        "C-CHUNK-STRUCT-800-0",
+        "G-CHUNK-STRUCT-800-0",
+        "C-EMBED-LARGE-1536",
+        "G-EMBED-LARGE-1536",
+        "G-ENTITY-POLICY-PROCESS-ROLE"
+      ],
+      "FINAL": [
+        "C0",
+        "G0",
+        "C-FINAL",
+        "G-FINAL",
+        "C-EMBED-LARGE-1536"
+      ]
+    },
+    "main_conditions_by_scope": {
+      "PRIMARY": [
+        "C0",
+        "G0",
+        "C-CHUNK-STRUCT-800-0",
+        "G-CHUNK-STRUCT-800-0",
+        "C-EMBED-LARGE-1536",
+        "G-EMBED-LARGE-1536",
+        "G-ENTITY-POLICY-PROCESS-ROLE"
+      ],
+      "FINAL": [
+        "C0",
+        "G0",
+        "C-FINAL",
+        "G-FINAL"
+      ]
+    },
+    "supplemental_conditions": {
+      "FINAL": [
+        "C-EMBED-LARGE-1536"
+      ]
+    },
+    "evaluation_ids": {
+      "PRIMARY": "EXAMPLE-PRIMARY",
+      "FINAL": "EXAMPLE-FINAL",
+      "GU": "EXAMPLE-GU"
+    },
+    "review_revision_ids": {
+      "PRIMARY": "EXAMPLE-REVIEW-PRIMARY",
+      "FINAL": "EXAMPLE-REVIEW-FINAL",
+      "GU": "EXAMPLE-REVIEW-GU"
+    },
+    "acceptance_ids": {
+      "PRIMARY": null,
+      "FINAL": null,
+      "GU": null
+    },
+    "graph_audit_reuse": {
+      "G-EMBED-LARGE-1536": {
+        "source_condition": "G0",
+        "artifact_types": [
+          "entities",
+          "relationships",
+          "community_reports"
+        ]
+      },
+      "G-FINAL": {
+        "source_condition": "G-ENTITY-POLICY-PROCESS-ROLE",
+        "artifact_types": [
+          "entities",
+          "relationships",
+          "community_reports"
+        ]
+      }
+    },
+    "graph_sampling_ids_by_condition": {
+      "G0": "EXAMPLE-AUDIT",
+      "G-CHUNK-STRUCT-800-0": "EXAMPLE-AUDIT",
+      "G-ENTITY-POLICY-PROCESS-ROLE": "EXAMPLE-AUDIT",
+      "G-FINAL": "EXAMPLE-AUDIT"
+    }
+  },
+  "artifacts": {
+    "questions": {
+      "path": "questions.jsonl",
+      "sha256": "6810a515beaf9ab9f782893b5f92cdc544fc9643a1e80b25c41e045cff861c88"
+    },
+    "references": {
+      "path": "references.jsonl",
+      "sha256": "120a4156fccceb6caedffa8af7a3e0f82099fbdf47da7845511452eb2f83b5d1"
+    },
+    "retrieval": {
+      "path": "retrieval.jsonl",
+      "sha256": "01731a77c402c6a19f63b7bb16e52571a3980c0c095178cfd051ceffc971f813"
+    },
+    "answer_reviews": {
+      "path": "answer_reviews.jsonl",
+      "sha256": "24495c367582bbd3dd65f170d0833d4d9290bb7606f813aa9a93b207448c6f1e"
+    },
+    "outcomes": {
+      "path": "outcomes.jsonl",
+      "sha256": "9bce38558264f025244621973a33d6a3b8cafe3a103a943f715731c8c1ec61e0"
+    },
+    "graph_reviews": {
+      "path": "graph_reviews.jsonl",
+      "sha256": "c37dbf3a185d058958c86bea390380176c86cf89c30273fcf7ec50f4d0c4092c"
+    },
+    "graph_population": {
+      "path": "graph_population.jsonl",
+      "sha256": "2ec65c9483c700a3066109e2ff7c006e7c071e243a5f3e61f1676c7be2af4b3b"
+    },
+    "errors": {
+      "path": "errors.jsonl",
+      "sha256": "f6da5de10fa5531ae7d19b12be27f7b81aca30c674888ac064753d928b81b718"
+    },
+    "gu_reviews": {
+      "path": "gu_reviews.jsonl",
+      "sha256": "0e0d8ae48ce9cf1ae342aeaa7d92c885888e8ceb5ceff4d4772bcf680de7ab56"
+    },
+    "judge_packets": {
+      "path": "judge_packets.jsonl",
+      "sha256": "4ef4d7bf3db8b3d0d91a5e9f0cf6d27c34eca0355dbc450f13ba5c0de6757003"
+    },
+    "graph_inventory": {
+      "path": "graph_inventory.jsonl",
+      "sha256": "7745fcb653dcfd0e7c0799270edc101f7b457b40f81c80fcfeff1e0c85bf939b"
+    },
+    "thesis_metric_examples": {
+      "path": "thesis_metric_examples.jsonl",
+      "sha256": "a3ec81e0bcc656d0434a9a8a0d2e0fc3bd55dc6d170e46009ab2db5bd5cfc187"
+    }
+  }
+}

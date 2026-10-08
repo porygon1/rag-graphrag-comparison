@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="183mm" viewBox="0 0 160 183" role="img">
+<title>Query embedding and exact cosine matching against the complete C0 chunk matrix</title>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.italic{font-style:italic}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.edge{fill:none;stroke:#333;stroke-width:.3}.node{fill:white;stroke:#444;stroke-width:.27}.paper{fill:white;stroke:#777;stroke-width:.25}.module{fill:#f4f4f4;stroke:#555;stroke-width:.27}.distance{fill:none;stroke:#666;stroke-width:.25;stroke-dasharray:1.2 1.1}</style>
+<path d="M2 0H154L158 4V17H2Z M154 0V4H158" class="paper"/>
+<text x="7" y="6" class="bold" text-anchor="start">Question</text>
+<text x="7" y="13" class="" text-anchor="start">Who books and welcomes guests?</text>
+<path d="M39.5 17V22.8" class="process"/>
+<rect x="2" y="23" width="75" height="22" rx="3" class="module"/>
+<text x="39.5" y="31" class="bold" text-anchor="middle">Azure embedding model</text>
+<text x="39.5" y="39" class="" text-anchor="middle">text-embedding-3-small</text>
+<path d="M39.5 45V50.8" class="process"/>
+<rect x="2" y="51" width="75" height="18" rx="3" class="module"/>
+<text x="39.5" y="58" class="bold" text-anchor="middle">Normalise query (NumPy)</text>
+<text x="39.5" y="65" class="small" text-anchor="middle">Scale the vector to unit length.</text>
+<path d="M39.5 69V74.8" class="process"/>
+<rect x="2" y="75" width="75" height="14" rx="1" class="paper"/>
+<text x="39.5" y="81" class="" text-anchor="middle">Normalised query q</text>
+<text x="39.5" y="87" class="small" text-anchor="middle">1,536 dimensions</text>
+<rect x="87" y="23" width="71" height="66" rx="1" class="paper"/>
+<text x="92" y="31" class="bold" text-anchor="start">Local vector index</text>
+<text x="92" y="38" class="bold" text-anchor="start">NumPy matrix</text>
+<path d="M92 42H153" class="rule"/>
+<text x="92" y="50" class="" text-anchor="start">N chunk vectors</text>
+<text x="92" y="57" class="" text-anchor="start">1,536 dimensions each</text>
+<text x="92" y="67" class="small" text-anchor="start">The vectors are normalised</text>
+<text x="92" y="73" class="small" text-anchor="start">and already stored.</text>
+<text x="92" y="83" class="small" text-anchor="start">v(c1), v(c2), ..., v(cN)</text>
+<path d="M39.5 89V94.8" class="process"/>
+<path d="M122.5 89V94.8" class="process"/>
+<rect x="2" y="95" width="156" height="64" rx="3" class="module"/>
+<text x="80" y="103" class="bold" text-anchor="middle">Exact cosine similarity (NumPy)</text>
+<path d="M7 108H153" class="rule"/>
+<text x="7" y="116" class="small bold" text-anchor="start">Schematic angle comparison</text>
+<path d="M16 148H41" class="process"/>
+<text x="44" y="149" class="bold" text-anchor="start">q</text>
+<path d="M16 148L38.0000 136.1257" class="process"/>
+<text x="39.0" y="134.12565791296208" class="small" text-anchor="start">v(c1)</text>
+<path d="M16 148L26.2500 125.1979" class="process"/>
+<text x="21.25" y="123.19786194235286" class="small" text-anchor="start">v(c6)</text>
+<path d="M28 148A12 12 0 0 0 26.5600 142.3003" class="rule"/>
+<path d="M23 148A7 7 0 0 0 18.8700 141.6154" class="rule"/>
+<text x="84" y="119" class="bold" text-anchor="start">score = q · v = cos θ</text>
+<text x="84" y="129" class="small" text-anchor="start">A smaller angle gives</text>
+<text x="84" y="135" class="small" text-anchor="start">a higher cosine score.</text>
+<text x="84" y="147" class="small" text-anchor="start">c1: 0.88     c6: 0.41</text>
+<text x="7" y="155" class="small" text-anchor="start">Matching uses all 1,536 dimensions.</text>
+<path d="M80 159V164.8" class="process"/>
+<rect x="2" y="165" width="156" height="16" rx="1" class="paper"/>
+<text x="80" y="172" class="bold" text-anchor="middle">One score for each of the N chunks</text>
+<text x="80" y="178" class="small" text-anchor="middle">Every stored vector is compared with the query.</text>
+<g id="vector-notation" fill="none" stroke="#171717" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" aria-label="Vector arrows over q and v">
+<path id="vec-query" d="M53.9957 77.6500H56.4957 M55.8457 77.1500L56.4957 77.6500L55.8457 78.1500"/>
+<path id="vec-stored-c1" d="M91.6760 79.6500H94.1760 M93.5260 79.1500L94.1760 79.6500L93.5260 80.1500"/>
+<path id="vec-stored-c2" d="M101.9651 79.6500H104.4651 M103.8151 79.1500L104.4651 79.6500L103.8151 80.1500"/>
+<path id="vec-stored-c4088" d="M117.3996 79.6500H119.8996 M119.2496 79.1500L119.8996 79.6500L119.2496 80.1500"/>
+<path id="vec-diagram-query" d="M43.9354 145.6500H46.4354 M45.7854 145.1500L46.4354 145.6500L45.7854 146.1500"/>
+<path id="vec-diagram-c1" d="M38.6760 130.9757H41.1760 M40.5260 130.4757L41.1760 130.9757L40.5260 131.4757"/>
+<path id="vec-diagram-c6" d="M20.9260 120.0479H23.4260 M22.7760 119.5479L23.4260 120.0479L22.7760 120.5479"/>
+<path id="vec-formula-query" d="M98.7146 115.6500H101.2146 M100.5646 115.1500L101.2146 115.6500L100.5646 116.1500"/>
+<path id="vec-formula-chunk" d="M104.4281 115.6500H106.9281 M106.2781 115.1500L106.9281 115.6500L106.2781 116.1500"/>
+</g>
+</svg>

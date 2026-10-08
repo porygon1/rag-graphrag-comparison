@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="180mm" viewBox="0 0 160 180" role="img">
+<title>From a source page to the C0 NumPy vector index with retained provenance</title>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.italic{font-style:italic}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.edge{fill:none;stroke:#333;stroke-width:.3}.node{fill:white;stroke:#444;stroke-width:.27}.paper{fill:white;stroke:#777;stroke-width:.25}.module{fill:#f4f4f4;stroke:#555;stroke-width:.27}.distance{fill:none;stroke:#666;stroke-width:.25;stroke-dasharray:1.2 1.1}</style>
+<path d="M2 0H154L158 4V10H2Z M154 0V4H158" class="paper"/>
+<text x="7" y="7" class="bold" text-anchor="start">Source document: Guideline A, page 1</text>
+<path d="M80 10V14.8" class="process"/>
+<rect x="2" y="15" width="156" height="23" rx="3" class="module"/>
+<text x="7" y="22" class="bold" text-anchor="start">Page text preparation (pdfplumber / project)</text>
+<text x="7" y="28" class="" text-anchor="start">Each non-empty page becomes one chunk after whitespace</text>
+<text x="7" y="34" class="" text-anchor="start">normalisation. Page boundaries are retained, with no overlap.</text>
+<path d="M80 38V42.8" class="process"/>
+<rect x="2" y="43" width="156" height="39" rx="1" class="paper"/>
+<text x="7" y="50" class="bold" text-anchor="start">Chunk ID: c1</text>
+<text x="153" y="50" class="" text-anchor="end">Document A / page 1</text>
+<path d="M7 54H153" class="rule"/>
+<text x="7" y="60" class="" text-anchor="start">The guide books each guest before the planetarium visit.</text>
+<text x="7" y="66" class="" text-anchor="start">The desk records every booking submitted by a guide.</text>
+<text x="7" y="72" class="" text-anchor="start">The guide welcomes guests at the desk before the show.</text>
+<text x="7" y="78" class="" text-anchor="start"></text>
+<path d="M39.5 82V86.8" class="process"/>
+<path d="M122.5 82V86.8" class="process"/>
+<rect x="2" y="87" width="75" height="21" rx="3" class="module"/>
+<text x="39.5" y="94" class="bold" text-anchor="middle">Azure embedding model</text>
+<text x="39.5" y="100" class="" text-anchor="middle">text-embedding-3-small</text>
+<text x="39.5" y="106" class="small" text-anchor="middle">1,536 dimensions</text>
+<path d="M39.5 108V113.8" class="process"/>
+<rect x="2" y="114" width="75" height="18" rx="3" class="module"/>
+<text x="39.5" y="121" class="bold" text-anchor="middle">L2 normalisation (NumPy)</text>
+<text x="39.5" y="128" class="small" text-anchor="middle">Scale each vector to unit length.</text>
+<rect x="87" y="87" width="71" height="45" rx="1" class="paper"/>
+<text x="92" y="94" class="bold" text-anchor="start">Retained chunk data</text>
+<path d="M92 98H153" class="rule"/>
+<text x="92" y="105" class="" text-anchor="start">Chunk ID: c1</text>
+<text x="92" y="112" class="" text-anchor="start">Document: A. Page: 1.</text>
+<text x="92" y="120" class="small" text-anchor="start">The full text and its source</text>
+<text x="92" y="126" class="small" text-anchor="start">mapping remain available.</text>
+<path d="M39.5 132V137.8" class="process"/>
+<path d="M122.5 132V137.8" class="process"/>
+<rect x="2" y="138" width="156" height="42" rx="1" class="paper"/>
+<text x="7" y="145" class="bold" text-anchor="start">Local vector index (NumPy)</text>
+<path d="M7 149H153" class="rule"/>
+<text x="7" y="155" class="small bold" text-anchor="start">Matrix rows (.npy)</text>
+<text x="103" y="155" class="small bold" text-anchor="start">Ordered IDs (JSON)</text>
+<rect x="7" y="157.5" width="70" height="6.5" rx="1" class="paper"/>
+<rect x="99" y="157.5" width="54" height="6.5" rx="1" class="paper"/>
+<rect x="7" y="164.3" width="70" height="6.5" rx="1" class="paper"/>
+<rect x="99" y="164.3" width="54" height="6.5" rx="1" class="paper"/>
+<text x="9" y="162" class="small" text-anchor="start">1: v(c1) = [v1, v2, ..., v1536]</text>
+<path d="M77 160.8H99" class="edge"/>
+<text x="105" y="162" class="bold" text-anchor="start">c1</text>
+<text x="9" y="169" class="small" text-anchor="start">2: v(c2) = [v1, v2, ..., v1536]</text>
+<path d="M77 167.5H99" class="edge"/>
+<text x="105" y="169" class="" text-anchor="start">c2</text>
+<text x="7" y="176" class="small" text-anchor="start">N rows x 1,536 dimensions</text>
+<text x="105" y="176" class="small" text-anchor="start">...</text>
+<g id="vector-notation" fill="none" stroke="#171717" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" aria-label="Arrows mark whole row vectors; v1 to v1536 are scalar components">
+<path id="vec-row-1" d="M12.7940 158.8500H15.2940 M14.6440 158.3500L15.2940 158.8500L14.6440 159.3500"/>
+<path id="vec-row-2" d="M12.7940 165.8500H15.2940 M14.6440 165.3500L15.2940 165.8500L14.6440 166.3500"/>
+</g>
+</svg>

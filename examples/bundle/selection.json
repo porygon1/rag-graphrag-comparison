@@ -1,0 +1,142 @@
+{
+  "manifest_fields": {
+    "schema_version": true,
+    "metadata": {
+      "dataset_kind": true,
+      "scopes": true,
+      "evaluation_ids": true,
+      "review_revision_ids": true,
+      "acceptance_ids": true,
+      "conditions_by_scope": true,
+      "main_conditions_by_scope": true,
+      "supplemental_conditions": true,
+      "graph_review_reference_conditions_by_scope": true,
+      "graph_audit_reuse": true,
+      "graph_sampling_ids_by_condition": true,
+      "technical_diagnostic_conditions": true,
+      "source_population": true,
+      "reported_case_question_ids": true
+    }
+  },
+  "roles": {
+    "questions": {
+      "fields": {
+        "question_id": true,
+        "cohort": true,
+        "review_triggers": true
+      }
+    },
+    "references": {
+      "fields": {
+        "scope": true,
+        "question_id": true,
+        "qrels": true,
+        "minimal_evidence_sets": true,
+        "question_units": true
+      }
+    },
+    "retrieval": {
+      "fields": {
+        "scope": true,
+        "condition_id": true,
+        "question_id": true,
+        "ranked_units": true
+      }
+    },
+    "answer_reviews": {
+      "fields": {
+        "scope": true,
+        "case_id": true,
+        "question_id": true,
+        "condition_id": true,
+        "cohort": true,
+        "assessment_state": true,
+        "review_status": true,
+        "technical_status": true,
+        "grades": {
+          "decision_label": true,
+          "answer_correctness": true,
+          "faithfulness": true,
+          "citation_correctness": true
+        }
+      }
+    },
+    "outcomes": {
+      "fields": {
+        "scope": true,
+        "condition_id": true,
+        "question_id": true,
+        "metric": true,
+        "value": true,
+        "status": true
+      }
+    },
+    "graph_reviews": {
+      "fields": {
+        "scope": true,
+        "condition_id": true,
+        "artifact_type": true,
+        "audit_item_id": true,
+        "status": true,
+        "support_status": true,
+        "provenance_status": true,
+        "contradiction_flag": true,
+        "ambiguity_flag": true
+      }
+    },
+    "graph_population": {
+      "fields": {
+        "condition_id": true,
+        "artifact_type": true,
+        "stable_id": true,
+        "stratum": true
+      }
+    },
+    "errors": {
+      "fields": {
+        "scope": true,
+        "condition_id": true,
+        "dimension": true,
+        "question_id": true,
+        "case_id": true,
+        "cohort": true,
+        "status": true,
+        "codes": true
+      }
+    },
+    "gu_reviews": {
+      "fields": {
+        "question_id": true,
+        "condition_id": true,
+        "category": true,
+        "review_status": true,
+        "answerability": true,
+        "evaluation_suitability": true
+      }
+    },
+    "graph_inventory": {
+      "fields": {
+        "condition_id": true,
+        "artifact_type": true,
+        "graph_source_condition": true,
+        "row_count": true,
+        "unique_id_count": true,
+        "median_character_length": true,
+        "character_length_field": true,
+        "includes_whitespace": true,
+        "raw_entity_type_count": true,
+        "configured_entity_types": true,
+        "community_level_counts": true
+      }
+    },
+    "thesis_metric_examples": {
+      "fields": {
+        "case_id": true,
+        "thesis_ref": true,
+        "ranked_units": true,
+        "qrels": true,
+        "minimal_evidence_sets": true
+      }
+    }
+  }
+}

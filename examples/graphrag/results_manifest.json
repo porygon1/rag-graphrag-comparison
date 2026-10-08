@@ -1,0 +1,20 @@
+{
+  "schema_version": "graphrag-local-search-artifacts-v1",
+  "status": "completed",
+  "graphrag_version": "3.1.0",
+  "question_set_version": "DEMO-RFC2795-Q1",
+  "artifacts": {
+    "native_results": {
+      "path": "native_results.jsonl",
+      "sha256": "e7febf92359a1fa89c00e2ba9d607784a60db167924f32b2cecf0d9f6796406d"
+    },
+    "projection_results": {
+      "path": "projection_results.jsonl",
+      "sha256": "255e265ea1e1b70c2abeaea675d040b6c96ca34ad363af145074f45b68bda617"
+    },
+    "index_manifest": {
+      "path": "index_manifest.json",
+      "sha256": "a6667ad9d303dbea795ac0d909c467eb12d711180678015aba1aff99b3bb0233"
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "corpus_snapshot_id": "DEMO-RFC2795-001",
+  "question_set_version": "DEMO-RFC2795-Q1",
+  "document": {
+    "document_id": "RFC-2795",
+    "pdf_file": "rfc2795.pdf",
+    "page_count": 20,
+    "sha256": "2572eb2cf639028f4c8e86458bce0b1442e86c9724af739dedaefd261f4bebfc",
+    "source_url": "https://www.ietf.org/ietf-ftp/rfc/rfc2795.txt.pdf",
+    "reference_url": "https://www.rfc-editor.org/info/rfc2795/",
+    "title": "The Infinite Monkey Protocol Suite (IMPS)",
+    "author": "S. Christey",
+    "publication_date": "2000-04-01",
+    "copyright_notice": "Copyright (C) The Internet Society (2000). All Rights Reserved.",
+    "redistribution_permission": "This document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to the Internet Society or other Internet organizations, except as needed for the purpose of developing Internet standards in which case the procedures for copyrights defined in the Internet Standards process must be followed, or as required to translate it into languages other than English."
+  },
+  "questions": [
+    {
+      "question_id": "DEMO-IMPS-Q-001",
+      "question_text": "Which numeric KEEPER request code stops all monkey business, which response codes may a SIMIAN use, and how can an attacker misuse that request?",
+      "answerability": "answerable",
+      "benchmark_role": "primary_answerable",
+      "diagnostic_tags": [
+        "multi_evidence_and_semantics_assumed"
+      ],
+      "review_triggers": [],
+      "reference_package": {
+        "canonical_answer_summary": "STOP is KEEPER request code 7 and stops all monkey business. A SIMIAN may answer with NORESPONSE, ALIVE, DEAD, or GONE. An attacker can send one STOP request to each SIMIAN to cause a massive denial of service throughout the ZOO.",
+        "required_facts": [
+          "STOP is KEEPER request code 7 and stops all monkey business.",
+          "A SIMIAN may answer STOP with NORESPONSE, ALIVE, DEAD, or GONE.",
+          "An attacker can send one STOP request to each SIMIAN to cause a massive denial of service throughout the ZOO."
+        ],
+        "acceptable_variants": [
+          "Return codes 4, 5, 6 and 2 correspond to NORESPONSE, ALIVE, DEAD and GONE.",
+          "Sending a STOP request to every SIMIAN can disrupt the entire ZOO."
+        ],
+        "prohibited_facts": [
+          "A different numeric request code for STOP.",
+          "ACCEPT or REFUSE as a permitted STOP response.",
+          "The described STOP attack requires transcript transfer."
+        ],
+        "numeric_tolerance": {},
+        "minimal_evidence_sets": [
+          [
+            "eu::DEMO-RFC2795-001::RFC-2795::p7",
+            "eu::DEMO-RFC2795-001::RFC-2795::p8",
+            "eu::DEMO-RFC2795-001::RFC-2795::p16"
+          ]
+        ],
+        "abstention_expected": false,
+        "abstention_reason": null,
+        "qrels": {
+          "eu::DEMO-RFC2795-001::RFC-2795::p1": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p2": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p3": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p4": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p5": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p6": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p7": 2,
+          "eu::DEMO-RFC2795-001::RFC-2795::p8": 2,
+          "eu::DEMO-RFC2795-001::RFC-2795::p9": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p10": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p11": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p12": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p13": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p14": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p15": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p16": 2,
+          "eu::DEMO-RFC2795-001::RFC-2795::p17": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p18": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p19": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p20": 0
+        }
+      }
+    },
+    {
+      "question_id": "DEMO-IMPS-Q-002",
+      "question_text": "Which protocol does a ZOO use to send transcripts to a BARD?",
+      "answerability": "answerable",
+      "benchmark_role": "primary_answerable",
+      "diagnostic_tags": [],
+      "review_triggers": [],
+      "reference_package": {
+        "canonical_answer_summary": "The ZOO uses IAMB-PENT.",
+        "required_facts": [
+          "The protocol used for sending transcripts from a ZOO to a BARD is IAMB-PENT."
+        ],
+        "acceptable_variants": [
+          "Inter-Annex Message Broadcasting Protocol for Evaluating Neoclassical Transcripts."
+        ],
+        "prohibited_facts": [
+          "KEEPER, CHIMP or PAN as the protocol for ZOO-to-BARD transcript transfer."
+        ],
+        "numeric_tolerance": {},
+        "minimal_evidence_sets": [
+          [
+            "eu::DEMO-RFC2795-001::RFC-2795::p3"
+          ],
+          [
+            "eu::DEMO-RFC2795-001::RFC-2795::p4"
+          ],
+          [
+            "eu::DEMO-RFC2795-001::RFC-2795::p12"
+          ],
+          [
+            "eu::DEMO-RFC2795-001::RFC-2795::p13"
+          ]
+        ],
+        "abstention_expected": false,
+        "abstention_reason": null,
+        "qrels": {
+          "eu::DEMO-RFC2795-001::RFC-2795::p1": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p2": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p3": 2,
+          "eu::DEMO-RFC2795-001::RFC-2795::p4": 2,
+          "eu::DEMO-RFC2795-001::RFC-2795::p5": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p6": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p7": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p8": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p9": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p10": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p11": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p12": 2,
+          "eu::DEMO-RFC2795-001::RFC-2795::p13": 2,
+          "eu::DEMO-RFC2795-001::RFC-2795::p14": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p15": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p16": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p17": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p18": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p19": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p20": 0
+        }
+      }
+    },
+    {
+      "question_id": "DEMO-IMPS-Q-003",
+      "question_text": "For PAN rejection code 0, who chooses the encryption scheme, and does PAN specify how a ZOO can identify it?",
+      "answerability": "answerable",
+      "benchmark_role": "primary_answerable",
+      "diagnostic_tags": [
+        "exception_sensitive"
+      ],
+      "review_triggers": [],
+      "reference_package": {
+        "canonical_answer_summary": "The CRITIC selects the encryption scheme for the textual response. PAN does not specify how the ZOO can determine the scheme, so the ZOO may not understand the response.",
+        "required_facts": [
+          "The code-0 textual response uses an encryption scheme selected by the CRITIC.",
+          "PAN does not specify how a ZOO can determine the scheme being used."
+        ],
+        "acceptable_variants": [
+          "The CRITIC chooses the algorithm; no discovery method is specified for the ZOO."
+        ],
+        "prohibited_facts": [
+          "The ZOO selects the encryption scheme.",
+          "PAN defines a procedure for discovering the scheme."
+        ],
+        "numeric_tolerance": {},
+        "minimal_evidence_sets": [
+          [
+            "eu::DEMO-RFC2795-001::RFC-2795::p15"
+          ]
+        ],
+        "abstention_expected": false,
+        "abstention_reason": null,
+        "qrels": {
+          "eu::DEMO-RFC2795-001::RFC-2795::p1": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p2": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p3": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p4": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p5": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p6": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p7": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p8": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p9": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p10": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p11": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p12": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p13": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p14": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p15": 2,
+          "eu::DEMO-RFC2795-001::RFC-2795::p16": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p17": 1,
+          "eu::DEMO-RFC2795-001::RFC-2795::p18": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p19": 0,
+          "eu::DEMO-RFC2795-001::RFC-2795::p20": 0
+        }
+      }
+    },
+    {
+      "question_id": "DEMO-IMPS-Q-004",
+      "question_text": "What response timeout, in milliseconds, does CHIMP require for a SEND FOOD request?",
+      "answerability": "abstention_expected",
+      "benchmark_role": "robustness_abstention",
+      "diagnostic_tags": [],
+      "review_triggers": [],
+      "reference_package": {
+        "canonical_answer_summary": "RFC 2795 does not specify a response timeout in milliseconds for CHIMP SEND FOOD requests.",
+        "required_facts": [],
+        "acceptable_variants": [],
+        "prohibited_facts": [
+          "Any unsupported numeric response timeout."
+        ],
+        "numeric_tolerance": {},
+        "minimal_evidence_sets": [],
+        "abstention_expected": true,
+        "abstention_reason": "CHIMP defines SEND FOOD and server response types, but does not prescribe a numeric response timeout.",
+        "qrels": {}
+      }
+    }
+  ]
+}

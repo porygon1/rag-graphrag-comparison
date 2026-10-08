@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="105mm" viewBox="0 0 160 105" role="img" aria-labelledby="title desc">
+<title id="title">An entity text is embedded and stored with its entity ID</title><desc id="desc">The title GUIDE and its description are sent to text-embedding-3-small. The output vector h is 1536-dimensional and shown symbolically. GraphRAG 3.1.0 stores the vector together with illustrative entity ID e1 through its LanceDB adapter. The ID is metadata, not an extra text input to the embedding model.</desc>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.name{font-size:4.4px;font-weight:700}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.module{fill:#f2f2f2;stroke:#444;stroke-width:.27}.record{fill:white;stroke:#888;stroke-width:.22}</style>
+<g id="entity-text"><rect x="2" y="2" width="70" height="35" rx=".7" class="record"/><text x="7" y="8" class="name">GUIDE</text><text x="67" y="8" text-anchor="end" class="small">ID: e1</text><path class="rule" d="M7 12H67"/><text x="7" y="19">Person who books</text><text x="7" y="24.8">and welcomes guests.</text><text x="7" y="32" class="small">Title + description</text></g>
+<path class="process" d="M72 20H82.8"/>
+<g id="embedding-model"><rect class="module" x="83" y="6" width="75" height="28" rx="3"/><text x="120.5" y="15" text-anchor="middle" class="bold">Azure embedding model</text><text x="120.5" y="23" text-anchor="middle" class="small">text-embedding-3-small</text><text x="120.5" y="29" text-anchor="middle" class="small">1,536 dimensions</text></g>
+<path class="process" d="M120.5 34V40.8"/>
+<rect x="83" y="41" width="75" height="12" rx="1" class="record"/>
+<text x="120.5" y="48.5" text-anchor="middle"><tspan class="bold">h</tspan> = [h1, h2, ..., h1536]</text>
+<path class="process" d="M120.5 53V58.8"/>
+<path class="process" d="M17 37V69H82.8"/><text x="22" y="56" class="small">GraphRAG retains ID e1.</text>
+<g id="store-program"><rect class="module" x="83" y="59" width="75" height="20" rx="1.2"/><text x="120.5" y="65" text-anchor="middle" class="bold">Vector storage (GraphRAG 3.1.0)</text><text x="120.5" y="71" text-anchor="middle" class="small">GraphRAG stores the vector</text><text x="120.5" y="76" text-anchor="middle" class="small">together with entity ID e1.</text></g>
+<path class="process" d="M120.5 79V83.8"/>
+<g id="stored-vector"><rect x="2" y="84" width="156" height="19" rx=".7" class="record"/><text x="7" y="90.5" class="bold">LanceDB entity vector store</text><path class="rule" d="M7 94H153"/><text x="7" y="100" class="small">Entity ID: <tspan class="bold">e1</tspan></text><text x="72" y="100" class="small">Vector: <tspan class="bold">h</tspan> (1,536 dimensions)</text></g>
+<g id="vector-notation" fill="none" stroke="#171717" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" aria-label="Arrows identify complete vectors; indexed components remain scalar">
+<path id="vec-entity-vector" d="M101.3952 44.8000H103.8952 M103.2452 44.3000L103.8952 44.8000L103.2452 45.3000"/>
+<path id="vec-stored-vector" d="M84.4408 96.4500H86.9408 M86.2908 95.9500L86.9408 96.4500L86.2908 96.9500"/>
+</g>
+</svg>

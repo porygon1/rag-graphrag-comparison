@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="177mm" viewBox="0 0 160 177" role="img">
+<title>Resolve the Sources record through stored project provenance to the original document and page</title>
+<defs><marker id="arrow" markerWidth="3" markerHeight="3" refX="2.8" refY="1.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L3 1.5L0 3Z" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#171717;font-size:3.881px}.small{font-size:3.704px}.bold{font-weight:700}.italic{font-style:italic}.process{fill:none;stroke:#222;stroke-width:.3;marker-end:url(#arrow)}.rule{fill:none;stroke:#999;stroke-width:.22}.edge{fill:none;stroke:#333;stroke-width:.3}.node{fill:white;stroke:#444;stroke-width:.27}.paper{fill:white;stroke:#777;stroke-width:.25}.module{fill:#f4f4f4;stroke:#555;stroke-width:.27}.distance{fill:none;stroke:#666;stroke-width:.25;stroke-dasharray:1.2 1.1}</style>
+<rect x="2" y="0" width="156" height="22" rx="1" class="paper"/>
+<text x="7" y="7" class="bold" text-anchor="start">Reference in the generated answer</text>
+<text x="7" y="16" class="" text-anchor="start">[Data: Sources (1)]</text>
+<path d="M80 22V34" class="process"/>
+<rect x="22" y="34" width="116" height="31" rx="1" class="paper"/>
+<text x="27" y="42" class="bold" text-anchor="start">Sources record</text>
+<path d="M27 46H133" class="rule"/>
+<text x="27" y="53" class="" text-anchor="start">Record ID: 1</text>
+<text x="27" y="60" class="" text-anchor="start">Text unit: t1</text>
+<path d="M80 65V77" class="process"/>
+<rect x="22" y="77" width="116" height="31" rx="2" class="module"/>
+<text x="80" y="85" class="bold" text-anchor="middle">Source resolution (project)</text>
+<text x="80" y="94" class="" text-anchor="middle">The project follows t1 to its input record</text>
+<text x="80" y="102" class="" text-anchor="middle">to identify the original document and page.</text>
+<path d="M80 108V120" class="process"/>
+<path d="M2 120H154L158 124V175H2Z M154 120V124H158" class="paper"/>
+<text x="7" y="128" class="bold" text-anchor="start">Guideline A / page 1</text>
+<path d="M7 133H153" class="rule"/>
+<text x="7" y="142" class="" text-anchor="start">The guide books each guest before the planetarium visit.</text>
+<text x="7" y="150" class="" text-anchor="start">The desk records every booking submitted by a guide.</text>
+<text x="7" y="158" class="" text-anchor="start">The guide welcomes guests at the desk before the show.</text>
+<text x="7" y="166" class="" text-anchor="start"></text>
+</svg>

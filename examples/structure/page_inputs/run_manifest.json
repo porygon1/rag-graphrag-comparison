@@ -1,0 +1,24 @@
+{
+  "schema_version": "classical-rag-inputs-v1",
+  "artifact_kind": "inputs",
+  "chunking_policy": "page-v1-no-overlap",
+  "question_set_version": "DEMO-RFC2795-Q1",
+  "artifacts": {
+    "chunks": {
+      "path": "chunks.jsonl",
+      "sha256": "e00b7daaaa32c344b7f1aa8ef9086d6d484301050d53d370d92cad9e30e9173f"
+    },
+    "chunk_origins": {
+      "path": "chunk_origins.jsonl",
+      "sha256": "c5efec73a3e086a1f821383b558c33bbcbd69b0318371bb4495cc0738bb71be9"
+    },
+    "questions": {
+      "path": "questions.jsonl",
+      "sha256": "6aaf3799215ee39c724c4e2f33a070f241b66967ad48dc92a10c8e8b0cdd0216"
+    },
+    "raw_pages": {
+      "path": "raw_pages.jsonl",
+      "sha256": "b708a43dc8f67488dc26c6a3aa588503c6edcbe2b6f54d07f490f6d20376f9e9"
+    }
+  }
+}
