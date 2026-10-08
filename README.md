@@ -51,8 +51,9 @@ The public pipeline uses the 20-page **RFC 2795: The Infinite Monkey Protocol
 Suite**, a specification for a fictional network of monkeys and typewriters.
 [Example data](examples/data/README.md) documents the unchanged PDF and questions.
 Saved embeddings, graph artefacts, contexts and answers show both system paths
-without new model requests. The evaluation inputs are illustrative and do not
-rate the saved RFC answers.
+without new model requests. The baseline retrieval plot uses these saved runs
+and source-checked RFC page grades. Configuration and answer-quality plots use
+illustrative inputs; they do not rate the saved RFC answers.
 
 Use Python 3.13.7 and [uv](https://docs.astral.sh/uv/). From the repository root:
 

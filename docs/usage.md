@@ -109,8 +109,9 @@ For result calculation, notebooks 05a, 05b, 06 and 06a select a dataset through
 supply accepted reviews and scoped retrieval/reference inputs. PRIMARY
 covers baselines and single-factor changes. FINAL has its own shared relevance
 pool, so its retrieval baseline values must be calculated on that pool. Genuine
-User remains a separate nominal evaluation. Run 06b after 06 and 06a with their
-matching output folders.
+User remains a separate nominal evaluation. For the public RFC baseline, run 05
+before 06; its bound retrieval results supply the baseline plot. Run 06b after
+06 and 06a with their matching output folders.
 
 File hashes are checked before calculation. Each outcome retains its applicable
 and valid population; missing inputs are not scored as valid zero observations.

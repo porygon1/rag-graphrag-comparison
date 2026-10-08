@@ -11,6 +11,11 @@ The public dataset contains invented rankings and assessments. Its
 grades to the saved RFC answers. An approved dataset has kind `accepted` and
 retains its evaluation, review and acceptance identities.
 
+Notebook 05 separately binds the saved RFC baseline retrieval to its source-checked
+page grades in `local/evaluation/rfc2795_retrieval/`. Notebook 06 records that
+public comparison as `public_rfc_baseline`; Figure 2 uses it in the default
+example. The other default result surfaces use the illustrative dataset.
+
 ## Manifest and evaluation scopes
 
 The manifest has `schema_version`, `metadata` and `artifacts`. Every artifact

@@ -10,7 +10,10 @@ scope identities and validity states. The [Classical-RAG contract](classical_rag
 and [GraphRAG contract](graphrag_artifacts.md) define the stored system artefacts.
 Relative paths and SHA256 preserve these bindings when stored artefacts are
 relocated. Offline calculation does not make model requests or revise accepted
-human judgements.
+human judgements. In the public default, Figure 2 instead uses the saved RFC
+baseline retrieval with its source-checked page grades; three pairs give
+case-level differences and counts without an aggregate effect. The other
+default result surfaces use the illustrative evaluation dataset.
 
 ## Reported result surfaces
 

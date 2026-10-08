@@ -33,7 +33,9 @@ Read [answer and paired outcomes](../../notebooks/05a_answer_and_paired_outcomes
 [diagnostics](../../notebooks/05b_diagnostic_assessments.ipynb) and
 [result surfaces](../../notebooks/06_reported_results_and_limits.ipynb). Their
 default execution makes no model requests. The result plot labels its input
-kind and valid case counts explicitly.
+kind and valid case counts explicitly. Figure 2 in notebook 06b uses the
+separately bound saved RFC baseline results from notebook 05; the remaining
+default figures use this illustrative dataset.
 
 The three constructed appendix records retain the cited rankings and relevance
 pools. Appendix A.3 supplies no minimal evidence set, so Evidence Recall is
